@@ -7,5 +7,3 @@ The project is aimed towards individuals who seek a low cost mechatronic solutio
 
 ## How To use
 The main project folder holds all the registers and code used for the PIC18F MCU with MPLABX IDE. In order to use the file the user must move the project folder with .X at the end of it into their respective MPLABX projects directory. Defualt DIR: C:\Users\tyler\MPLABXProjects
-
-test change
