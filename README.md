@@ -10,6 +10,8 @@ The main project folder holds all the registers and code used for the PIC18F MCU
 
 
 ### Helpful Git Bash Commands to Remember
+git clone "link"
+	Clones a git repo to your local computer for use. Link referes to the link you can copy from the green code drop down.
 git status
 	status of the current local repo
 git add
@@ -22,4 +24,3 @@ git commit -m "message"
 	adds a single line message to files being commited to the branch
 git push "link"
 	git push sends the current updates to the github repo. Link is used to copy the destination for the push
-	
