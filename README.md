@@ -22,7 +22,7 @@ The main project folder holds all the registers and code used for the PIC18F MCU
 	<br /> *Choose what branch to swap to and work with.<br />
 <br /> ``` git commit -m "message" ``` <br />
 	<br /> *Adds a single line message to files being commited to the branch.* <br />
-<br /> ``` git push "link" ```<br />
+<br /> ``` git push [link] ```<br />
 	<br /> *Git push sends the current updates to the github repo. Link is used to copy the destination for the push.* <br />
 <br /> ``` git pull [link] ``` <br />
 	<br /> *Git pull sends the data from the git repo to your local repository.* <br />
