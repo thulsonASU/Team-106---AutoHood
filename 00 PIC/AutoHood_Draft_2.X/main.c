@@ -7,7 +7,7 @@ void main(void)
 
     while (1)
     {
-        // Breadboard System
+        // Breadboard System test
         // Add your application code
         LED6_Toggle();
         __delay_ms(500);
