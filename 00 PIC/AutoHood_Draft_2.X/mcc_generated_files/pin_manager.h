@@ -185,6 +185,46 @@
 #define LED5_SetAnalogMode()      do { ANSELAbits.ANSELA5 = 1; } while(0)
 #define LED5_SetDigitalMode()     do { ANSELAbits.ANSELA5 = 0; } while(0)
 
+// get/set LED6 aliases
+#define LED6_TRIS                 TRISAbits.TRISA6
+#define LED6_LAT                  LATAbits.LATA6
+#define LED6_PORT                 PORTAbits.RA6
+#define LED6_WPU                  WPUAbits.WPUA6
+#define LED6_OD                   ODCONAbits.ODCA6
+#define LED6_ANS                  ANSELAbits.ANSELA6
+#define LED6_SetHigh()            do { LATAbits.LATA6 = 1; } while(0)
+#define LED6_SetLow()             do { LATAbits.LATA6 = 0; } while(0)
+#define LED6_Toggle()             do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0)
+#define LED6_GetValue()           PORTAbits.RA6
+#define LED6_SetDigitalInput()    do { TRISAbits.TRISA6 = 1; } while(0)
+#define LED6_SetDigitalOutput()   do { TRISAbits.TRISA6 = 0; } while(0)
+#define LED6_SetPullup()          do { WPUAbits.WPUA6 = 1; } while(0)
+#define LED6_ResetPullup()        do { WPUAbits.WPUA6 = 0; } while(0)
+#define LED6_SetPushPull()        do { ODCONAbits.ODCA6 = 0; } while(0)
+#define LED6_SetOpenDrain()       do { ODCONAbits.ODCA6 = 1; } while(0)
+#define LED6_SetAnalogMode()      do { ANSELAbits.ANSELA6 = 1; } while(0)
+#define LED6_SetDigitalMode()     do { ANSELAbits.ANSELA6 = 0; } while(0)
+
+// get/set Button aliases
+#define Button_TRIS                 TRISAbits.TRISA7
+#define Button_LAT                  LATAbits.LATA7
+#define Button_PORT                 PORTAbits.RA7
+#define Button_WPU                  WPUAbits.WPUA7
+#define Button_OD                   ODCONAbits.ODCA7
+#define Button_ANS                  ANSELAbits.ANSELA7
+#define Button_SetHigh()            do { LATAbits.LATA7 = 1; } while(0)
+#define Button_SetLow()             do { LATAbits.LATA7 = 0; } while(0)
+#define Button_Toggle()             do { LATAbits.LATA7 = ~LATAbits.LATA7; } while(0)
+#define Button_GetValue()           PORTAbits.RA7
+#define Button_SetDigitalInput()    do { TRISAbits.TRISA7 = 1; } while(0)
+#define Button_SetDigitalOutput()   do { TRISAbits.TRISA7 = 0; } while(0)
+#define Button_SetPullup()          do { WPUAbits.WPUA7 = 1; } while(0)
+#define Button_ResetPullup()        do { WPUAbits.WPUA7 = 0; } while(0)
+#define Button_SetPushPull()        do { ODCONAbits.ODCA7 = 0; } while(0)
+#define Button_SetOpenDrain()       do { ODCONAbits.ODCA7 = 1; } while(0)
+#define Button_SetAnalogMode()      do { ANSELAbits.ANSELA7 = 1; } while(0)
+#define Button_SetDigitalMode()     do { ANSELAbits.ANSELA7 = 0; } while(0)
+
 // get/set input2B aliases
 #define input2B_TRIS                 TRISBbits.TRISB0
 #define input2B_LAT                  LATBbits.LATB0

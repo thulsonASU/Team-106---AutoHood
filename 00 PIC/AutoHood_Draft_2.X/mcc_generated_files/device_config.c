@@ -48,7 +48,7 @@
 
 // CONFIG1L
 #pragma config FEXTOSC = OFF    // ->Oscillator not enabled
-#pragma config RSTOSC = EXTOSC    // ->EXTOSC operating per FEXTOSC bits (device manufacturing default)
+#pragma config RSTOSC = HFINTOSC_64MHZ    // ->HFINTOSC with HFFRQ = 64 MHz and CDIV = 1:1
 
 // CONFIG1H
 #pragma config CLKOUTEN = OFF    // ->CLKOUT function is disabled
