@@ -1345,23 +1345,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9
 [; ;main.c: 9:     {
 {
-"11
-[; ;main.c: 11:         do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
+"12
+[; ;main.c: 12:         do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
 [e :U 1448 ]
 {
 [e = . . _LATAbits 0 6 -> ~ -> . . _LATAbits 0 6 `i `uc ]
 }
 [e :U 1447 ]
-"12
-[; ;main.c: 12:         _delay((unsigned long)((500)*(1000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
 "13
-[; ;main.c: 13:     }
+[; ;main.c: 13:         _delay((unsigned long)((500)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"14
+[; ;main.c: 14:     }
 }
 [e :U 1443 ]
 [e $U 1444  ]
 [e :U 1445 ]
-"14
-[; ;main.c: 14: }
+"15
+[; ;main.c: 15: }
 [e :UE 1442 ]
 }

@@ -9,7 +9,7 @@
 # 1 "mcc_generated_files/device_config.c" 2
 # 50 "mcc_generated_files/device_config.c"
 #pragma config FEXTOSC = OFF
-#pragma config RSTOSC = EXTOSC
+#pragma config RSTOSC = HFINTOSC_64MHZ
 
 
 #pragma config CLKOUTEN = OFF

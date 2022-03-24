@@ -1731,8 +1731,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/i2c1_master.c: 171:     SSP1CON2 = 0x00;
 [e = _SSP1CON2 -> -> 0 `i `uc ]
 "172
-[; ;mcc_generated_files/i2c1_master.c: 172:     SSP1ADD = 0x03;
-[e = _SSP1ADD -> -> 3 `i `uc ]
+[; ;mcc_generated_files/i2c1_master.c: 172:     SSP1ADD = 0x27;
+[e = _SSP1ADD -> -> 39 `i `uc ]
 "173
 [; ;mcc_generated_files/i2c1_master.c: 173:     SSP1CON1bits.SSPEN = 0;
 [e = . . _SSP1CON1bits 0 2 -> -> 0 `i `uc ]
@@ -3007,8 +3007,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/i2c1_master.c: 549:         SSP1CON2 = 0x00;
 [e = _SSP1CON2 -> -> 0 `i `uc ]
 "550
-[; ;mcc_generated_files/i2c1_master.c: 550:         SSP1ADD = 0x03;
-[e = _SSP1ADD -> -> 3 `i `uc ]
+[; ;mcc_generated_files/i2c1_master.c: 550:         SSP1ADD = 0x27;
+[e = _SSP1ADD -> -> 39 `i `uc ]
 "551
 [; ;mcc_generated_files/i2c1_master.c: 551:         SSP1CON1bits.SSPEN = 1;
 [e = . . _SSP1CON1bits 0 2 -> -> 1 `i `uc ]

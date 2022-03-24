@@ -7,10 +7,18 @@ void main(void)
 
     while (1)
     {
-        // Breadboard System test
+        // Breadboard System test branch
         // Add your application code
-        LED6_Toggle();
-        __delay_ms(500);
+        if(RC7 == 1)
+        {    
+            LED6_Toggle();
+            __delay_ms(200);
+        }
+        else
+        {
+            LED6_Toggle();
+            __delay_ms(500);
+        }
     }
 }
 /**

@@ -1542,8 +1542,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/adcc.c: 96:     ADACT = 0x00;
 [e = _ADACT -> -> 0 `i `uc ]
 "98
-[; ;mcc_generated_files/adcc.c: 98:     ADCLK = 0x00;
-[e = _ADCLK -> -> 0 `i `uc ]
+[; ;mcc_generated_files/adcc.c: 98:     ADCLK = 0x07;
+[e = _ADCLK -> -> 7 `i `uc ]
 "100
 [; ;mcc_generated_files/adcc.c: 100:     ADCON0 = 0x84;
 [e = _ADCON0 -> -> 132 `i `uc ]
