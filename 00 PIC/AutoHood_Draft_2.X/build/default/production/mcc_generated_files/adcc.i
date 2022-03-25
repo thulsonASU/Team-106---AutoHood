@@ -16089,9 +16089,9 @@ void ADCC_Initialize(void)
 
     ADACT = 0x00;
 
-    ADCLK = 0x07;
+    ADCLK = 0x1F;
 
-    ADCON0 = 0x84;
+    ADCON0 = 0xC4;
 
     ADACQ = 0x00;
 

@@ -11,32 +11,35 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
+$dist/default/production\AutoHood_Draft_2.X.production.o
+cinit CODE 0 1AB6 1AB6 12 1
+idloc IDLOC 5 200000 200000 10 1
+text0 CODE 0 1500 1500 170 1
+text1 CODE 0 1774 1774 C0 1
+text2 CODE 0 1834 1834 C0 1
+text3 CODE 0 19F0 19F0 36 1
+text4 CODE 0 134C 134C 1B4 1
+text5 CODE 0 F22 F22 42A 1
+text6 CODE 0 1670 1670 104 1
+text7 CODE 0 1A70 1A70 1A 1
+text8 CODE 0 1A54 1A54 1C 1
+text9 CODE 0 18F4 18F4 6E 1
+nvCOMRAM COMRAM 1 4F 4F 6 1
+text10 CODE 0 1A8A 1A8A 18 1
+text11 CODE 0 1AA2 1AA2 14 1
+text12 CODE 0 19B2 19B2 3E 1
+text13 CODE 0 1AC8 1AC8 A 1
+text14 CODE 0 1AD2 1AD2 A 1
+text15 CODE 0 1ADC 1ADC A 1
+text16 CODE 0 1962 1962 50 1
+text17 CODE 0 1A26 1A26 2E 1
+cstackCOMRAM COMRAM 1 1 1 29 1
+smallconst SMALLCONST 0 F00 F00 22 1
+bssCOMRAM COMRAM 1 2A 2A 25 1
+config CONFIG 4 300000 300000 C 1
+$C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
 idloc IDLOC 5 200000 200000 10 1
 init CODE 0 0 0 4 1
-config CONFIG 4 300000 300000 C 1
-$dist/default/production\AutoHood_Draft_2.X.production.o
-cinit CODE 0 110C 110C 12 1
-idloc IDLOC 5 200000 200000 10 1
-text0 CODE 0 FE0 FE0 48 1
-text1 CODE 0 10A6 10A6 1E 1
-text2 CODE 0 10C4 10C4 1C 1
-text3 CODE 0 F22 F22 6E 1
-text4 CODE 0 10E0 10E0 18 1
-text5 CODE 0 10F8 10F8 14 1
-text6 CODE 0 1028 1028 40 1
-text7 CODE 0 111E 111E A 1
-text8 CODE 0 1128 1128 A 1
-text9 CODE 0 1132 1132 A 1
-nvCOMRAM COMRAM 1 27 27 C 1
-text10 CODE 0 1068 1068 3E 1
-text11 CODE 0 113C 113C A 1
-text12 CODE 0 1146 1146 A 1
-text13 CODE 0 1150 1150 A 1
-text14 CODE 0 F90 F90 50 1
-cstackCOMRAM COMRAM 1 33 33 4 1
-smallconst SMALLCONST 0 F00 F00 22 1
-bssCOMRAM COMRAM 1 1 1 26 1
 config CONFIG 4 300000 300000 C 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -57,20 +60,20 @@ BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-EFF 1
-CONST 115A-FFFF 1
+CONST 1AE6-FFFF 1
 STACK 60-E87 1
-SMALLCONST 115A-FFFF 1
+SMALLCONST 1AE6-FFFF 1
 CODE 4-EFF 1
-CODE 115A-FFFF 1
+CODE 1AE6-FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-E87 1
-BIGRAM 37-E87 1
-COMRAM 37-5F 1
+BIGRAM 55-E87 1
+COMRAM 55-5F 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 115A-FFFF 1
+MEDIUMCONST 1AE6-FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -85,145 +88,386 @@ MEDIUMCONST 115A-FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\AutoHood_Draft_2.X.production.o
-F90 text14 CODE >62:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-F90 text14 CODE >66:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-F94 text14 CODE >68:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-F98 text14 CODE >70:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-F9C text14 CODE >72:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FA0 text14 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FA4 text14 CODE >76:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FA8 text14 CODE >78:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FAC text14 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FB2 text14 CODE >82:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FB6 text14 CODE >84:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FBA text14 CODE >86:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FBE text14 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FC2 text14 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FC6 text14 CODE >92:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FCA text14 CODE >94:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FCE text14 CODE >96:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FD2 text14 CODE >98:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FD6 text14 CODE >100:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FDA text14 CODE >102:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-FDE text14 CODE >105:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
-1150 text13 CODE >165:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1150 text13 CODE >166:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1158 text13 CODE >167:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1146 text12 CODE >157:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1146 text12 CODE >158:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-114E text12 CODE >159:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-113C text11 CODE >161:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-113C text11 CODE >162:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1144 text11 CODE >163:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1068 text10 CODE >66:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1068 text10 CODE >71:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-106C text10 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1070 text10 CODE >77:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1074 text10 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1078 text10 CODE >83:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-107C text10 CODE >86:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1088 text10 CODE >87:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1094 text10 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-10A0 text10 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-10A4 text10 CODE >92:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
-1132 text9 CODE >165:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1132 text9 CODE >166:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-113A text9 CODE >167:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1128 text8 CODE >157:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1128 text8 CODE >158:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1130 text8 CODE >159:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-111E text7 CODE >161:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-111E text7 CODE >162:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1126 text7 CODE >163:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1028 text6 CODE >66:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1028 text6 CODE >71:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-102E text6 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1032 text6 CODE >77:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1036 text6 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-103A text6 CODE >83:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-103E text6 CODE >86:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-104A text6 CODE >87:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1056 text6 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1062 text6 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-1066 text6 CODE >92:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-10F8 text5 CODE >167:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-10F8 text5 CODE >169:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-10FC text5 CODE >170:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-1100 text5 CODE >171:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-1104 text5 CODE >172:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-1108 text5 CODE >173:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-110A text5 CODE >174:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
-10E0 text4 CODE >61:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10E0 text4 CODE >64:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10E6 text4 CODE >66:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10EA text4 CODE >68:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10EE text4 CODE >70:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10F2 text4 CODE >72:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10F6 text4 CODE >73:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-F22 text3 CODE >55:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F22 text3 CODE >60:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F26 text3 CODE >61:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F2A text3 CODE >62:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F2E text3 CODE >67:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F32 text3 CODE >68:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F36 text3 CODE >69:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F3A text3 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F40 text3 CODE >75:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F44 text3 CODE >76:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F48 text3 CODE >81:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F4C text3 CODE >82:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F50 text3 CODE >83:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F54 text3 CODE >84:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F58 text3 CODE >89:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F5C text3 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F60 text3 CODE >91:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F64 text3 CODE >96:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F66 text3 CODE >97:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F68 text3 CODE >98:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F6A text3 CODE >103:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F6C text3 CODE >104:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F6E text3 CODE >105:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F70 text3 CODE >106:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F74 text3 CODE >115:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F7A text3 CODE >116:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F7E text3 CODE >117:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F82 text3 CODE >118:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F86 text3 CODE >119:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F8A text3 CODE >120:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-F8E text3 CODE >121:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
-10C4 text2 CODE >75:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10C4 text2 CODE >78:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10CA text2 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10CE text2 CODE >82:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10D2 text2 CODE >84:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10D6 text2 CODE >86:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10DA text2 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10DE text2 CODE >89:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10A6 text1 CODE >50:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10A6 text1 CODE >52:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10AA text1 CODE >53:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10AE text1 CODE >54:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10B2 text1 CODE >55:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10B6 text1 CODE >56:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10BA text1 CODE >57:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10BE text1 CODE >58:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-10C2 text1 CODE >59:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
-FE0 text0 CODE >3:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
-FE0 text0 CODE >6:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
-FE4 text0 CODE >12:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
-100A text0 CODE >13:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
-110C cinit CODE >6643:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-110C cinit CODE >6645:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-110C cinit CODE >6648:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-110C cinit CODE >6666:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1110 cinit CODE >6667:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1112 cinit CODE >6668:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1112 cinit CODE >6669:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1114 cinit CODE >6670:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1116 cinit CODE >6671:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1118 cinit CODE >6677:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-1118 cinit CODE >6679:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
-111A cinit CODE >6680:C:\Users\tyler\AppData\Local\Temp\xcAsg28.s
+1A26 text17 CODE >131:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A28 text17 CODE >134:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A2C text17 CODE >137:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A2E text17 CODE >140:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A30 text17 CODE >143:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A32 text17 CODE >147:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A32 text17 CODE >149:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A40 text17 CODE >153:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1A52 text17 CODE >154:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1962 text16 CODE >62:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1962 text16 CODE >66:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1966 text16 CODE >68:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+196A text16 CODE >70:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+196E text16 CODE >72:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1972 text16 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1976 text16 CODE >76:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+197A text16 CODE >78:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+197E text16 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1984 text16 CODE >82:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1988 text16 CODE >84:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+198C text16 CODE >86:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1990 text16 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1994 text16 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1998 text16 CODE >92:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+199C text16 CODE >94:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+19A0 text16 CODE >96:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+19A4 text16 CODE >98:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+19A8 text16 CODE >100:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+19AC text16 CODE >102:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+19B0 text16 CODE >105:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
+1ADC text15 CODE >165:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1ADC text15 CODE >166:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AE4 text15 CODE >167:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AD2 text14 CODE >157:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AD2 text14 CODE >158:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1ADA text14 CODE >159:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AC8 text13 CODE >161:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AC8 text13 CODE >162:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AD0 text13 CODE >163:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19B2 text12 CODE >66:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19B2 text12 CODE >71:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19B6 text12 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19BA text12 CODE >77:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19BE text12 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19C2 text12 CODE >83:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19C6 text12 CODE >86:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19D2 text12 CODE >87:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19DE text12 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19EA text12 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+19EE text12 CODE >92:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
+1AA2 text11 CODE >167:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1AA2 text11 CODE >169:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1AA6 text11 CODE >170:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1AAA text11 CODE >171:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1AAE text11 CODE >172:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1AB2 text11 CODE >173:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1AB4 text11 CODE >174:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
+1A8A text10 CODE >60:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A8A text10 CODE >63:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A90 text10 CODE >65:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A94 text10 CODE >67:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A98 text10 CODE >69:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A9C text10 CODE >71:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1AA0 text10 CODE >72:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+18F4 text9 CODE >55:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+18F4 text9 CODE >60:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+18F8 text9 CODE >61:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+18FC text9 CODE >62:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1900 text9 CODE >67:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1904 text9 CODE >68:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1908 text9 CODE >69:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+190C text9 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1912 text9 CODE >75:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1916 text9 CODE >76:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+191A text9 CODE >81:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+191E text9 CODE >82:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1922 text9 CODE >83:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1926 text9 CODE >84:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+192A text9 CODE >89:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+192E text9 CODE >90:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1932 text9 CODE >91:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1936 text9 CODE >96:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1938 text9 CODE >97:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+193A text9 CODE >98:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+193C text9 CODE >103:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+193E text9 CODE >104:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1940 text9 CODE >105:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1942 text9 CODE >106:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1946 text9 CODE >115:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+194C text9 CODE >116:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1950 text9 CODE >117:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1954 text9 CODE >118:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1958 text9 CODE >119:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+195C text9 CODE >120:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1960 text9 CODE >121:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
+1A54 text8 CODE >74:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A54 text8 CODE >77:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A5A text8 CODE >79:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A5E text8 CODE >81:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A62 text8 CODE >83:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A66 text8 CODE >85:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A6A text8 CODE >87:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A6E text8 CODE >88:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A70 text7 CODE >50:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A70 text7 CODE >52:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A74 text7 CODE >53:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A78 text7 CODE >54:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A7C text7 CODE >55:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A80 text7 CODE >56:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A84 text7 CODE >57:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1A88 text7 CODE >58:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+1670 text6 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1670 text6 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+169E text6 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+16AE text6 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+16DC text6 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+16EC text6 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+16FA text6 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+170C text6 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+171A text6 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+172C text6 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+173C text6 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+174C text6 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1772 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+F22 text5 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F22 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F28 text5 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F2E text5 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F3C text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F3E text5 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F4E text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F5E text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F6E text5 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F70 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F74 text5 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F84 text5 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F8A text5 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F90 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+F9E text5 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FA0 text5 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FB0 text5 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FC0 text5 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FD0 text5 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FD2 text5 CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FD6 text5 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FE6 text5 CODE >58:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+FE6 text5 CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1006 text5 CODE >66:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+101A text5 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1026 text5 CODE >96:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1030 text5 CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+103A text5 CODE >98:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1046 text5 CODE >99:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1052 text5 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+105E text5 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+106A text5 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1076 text5 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1082 text5 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1090 text5 CODE >105:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+109C text5 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10AC text5 CODE >107:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10B8 text5 CODE >108:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10C8 text5 CODE >109:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10D6 text5 CODE >110:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10E2 text5 CODE >111:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10F2 text5 CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+10FE text5 CODE >113:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+110E text5 CODE >114:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+111A text5 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+112A text5 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1136 text5 CODE >117:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1160 text5 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1196 text5 CODE >146:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11A4 text5 CODE >149:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11BE text5 CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11C2 text5 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11CC text5 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11DA text5 CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11DC text5 CODE >156:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11DC text5 CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11E6 text5 CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11EC text5 CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11FA text5 CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+11FE text5 CODE >164:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+120C text5 CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+123A text5 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+123E text5 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1242 text5 CODE >168:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1242 text5 CODE >169:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1254 text5 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1254 text5 CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1264 text5 CODE >175:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1270 text5 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+127E text5 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+12A8 text5 CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+12AC text5 CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+12C6 text5 CODE >184:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+12D6 text5 CODE >185:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+12DA text5 CODE >187:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+12F4 text5 CODE >188:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1304 text5 CODE >190:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1308 text5 CODE >191:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+130C text5 CODE >192:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+130C text5 CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1310 text5 CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1320 text5 CODE >196:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+132E text5 CODE >197:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1330 text5 CODE >199:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1336 text5 CODE >201:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+133A text5 CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+134A text5 CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+134C text4 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+134E text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+136C text4 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+139E text4 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13A2 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13A2 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13B2 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13C8 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13DC text4 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13E0 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13E4 text4 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13E6 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+13F0 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+1422 text4 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+1424 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+1430 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+143A text4 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+143A text4 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+146C text4 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+146E text4 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+1478 text4 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+1496 text4 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14A4 text4 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14A6 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14AA text4 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14CE text4 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14EC text4 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14EE text4 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+14FE text4 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+19F0 text3 CODE >6:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+19F0 text3 CODE >8:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+19F4 text3 CODE >10:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+19FA text3 CODE >11:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1A0A text3 CODE >8:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1A0A text3 CODE >12:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1A24 text3 CODE >13:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1834 text2 CODE >14:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1834 text2 CODE >23:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1836 text2 CODE >24:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1838 text2 CODE >27:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1844 text2 CODE >33:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1846 text2 CODE >34:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1848 text2 CODE >36:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+184A text2 CODE >37:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+184C text2 CODE >40:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+184E text2 CODE >41:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1850 text2 CODE >43:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+185C text2 CODE >47:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+185E text2 CODE >48:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1860 text2 CODE >54:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1862 text2 CODE >55:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1864 text2 CODE >57:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1866 text2 CODE >58:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1868 text2 CODE >62:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+186A text2 CODE >63:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+186C text2 CODE >65:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1878 text2 CODE >69:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+187A text2 CODE >70:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+187C text2 CODE >76:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+187E text2 CODE >77:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1880 text2 CODE >79:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1882 text2 CODE >80:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1884 text2 CODE >84:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1886 text2 CODE >85:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1888 text2 CODE >87:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1894 text2 CODE >91:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1896 text2 CODE >92:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1898 text2 CODE >98:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+189A text2 CODE >99:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+189C text2 CODE >101:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+189E text2 CODE >102:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18A0 text2 CODE >106:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18A2 text2 CODE >107:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18A4 text2 CODE >109:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18B0 text2 CODE >113:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18B2 text2 CODE >114:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18B4 text2 CODE >120:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18B6 text2 CODE >121:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18B8 text2 CODE >123:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18BA text2 CODE >124:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18BC text2 CODE >128:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18BE text2 CODE >129:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18C0 text2 CODE >131:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18CC text2 CODE >134:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18EE text2 CODE >137:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18F0 text2 CODE >138:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+18F2 text2 CODE >140:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1774 text1 CODE >141:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1774 text1 CODE >150:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1776 text1 CODE >151:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1778 text1 CODE >154:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1784 text1 CODE >160:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1786 text1 CODE >161:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1788 text1 CODE >163:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+178A text1 CODE >164:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+178C text1 CODE >167:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+178E text1 CODE >168:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1790 text1 CODE >170:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+179C text1 CODE >174:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+179E text1 CODE >175:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17A0 text1 CODE >181:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17A2 text1 CODE >182:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17A4 text1 CODE >184:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17A6 text1 CODE >185:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17A8 text1 CODE >189:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17AA text1 CODE >190:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17AC text1 CODE >192:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17B8 text1 CODE >196:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17BA text1 CODE >197:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17BC text1 CODE >203:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17BE text1 CODE >204:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17C0 text1 CODE >206:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17C2 text1 CODE >207:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17C4 text1 CODE >211:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17C6 text1 CODE >212:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17C8 text1 CODE >214:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17D4 text1 CODE >218:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17D6 text1 CODE >219:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17D8 text1 CODE >225:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17DA text1 CODE >226:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17DC text1 CODE >228:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17DE text1 CODE >229:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17E0 text1 CODE >233:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17E2 text1 CODE >234:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17E4 text1 CODE >236:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17F0 text1 CODE >240:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17F2 text1 CODE >241:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17F4 text1 CODE >247:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17F6 text1 CODE >248:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17F8 text1 CODE >250:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17FA text1 CODE >251:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17FC text1 CODE >255:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+17FE text1 CODE >256:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1800 text1 CODE >258:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+180C text1 CODE >261:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+182E text1 CODE >263:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1830 text1 CODE >264:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1832 text1 CODE >266:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+1500 text0 CODE >4:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1500 text0 CODE >7:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1504 text0 CODE >12:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1514 text0 CODE >15:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1518 text0 CODE >23:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1526 text0 CODE >25:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1548 text0 CODE >26:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1560 text0 CODE >27:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1574 text0 CODE >28:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1588 text0 CODE >30:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+158C text0 CODE >33:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+15B2 text0 CODE >34:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+15CA text0 CODE >38:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+15D8 text0 CODE >39:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+15FA text0 CODE >41:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+162E text0 CODE >43:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1660 text0 CODE >44:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1666 text0 CODE >45:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1666 text0 CODE >47:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+1AB6 cinit CODE >5746:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AB6 cinit CODE >5748:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AB6 cinit CODE >5751:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AB6 cinit CODE >5766:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1ABA cinit CODE >5767:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1ABC cinit CODE >5768:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1ABC cinit CODE >5769:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1ABE cinit CODE >5770:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AC0 cinit CODE >5771:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AC2 cinit CODE >5777:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AC2 cinit CODE >5779:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
+1AC4 cinit CODE >5780:C:\Users\tyler\AppData\Local\Temp\xcAs12nk.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -237,18 +481,18 @@ FE4 text0 CODE >12:C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\AutoHood_Draft_2.X.production.o
-_I2C1_Initialize 10F8 0 CODE 0 text5 dist/default/production\AutoHood_Draft_2.X.production.o
-__Hspace_0 115A 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__Hspace_1 37 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+_I2C1_Initialize 1AA2 0 CODE 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
+__Hspace_0 1AE6 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__Hspace_1 55 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hspace_4 60000C 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1STATbits F95 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-EUSART1_SetErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+EUSART1_SetErrorHandler@interruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\AutoHood_Draft_2.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-_EUSART1_Initialize 1068 0 CODE 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+_EUSART1_Initialize 19B2 0 CODE 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AutoHood_Draft_2.X.production.o
-_PMD_Initialize 10C4 0 CODE 0 text2 dist/default/production\AutoHood_Draft_2.X.production.o
+_PMD_Initialize 1A54 0 CODE 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lsmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\AutoHood_Draft_2.X.production.o
 _LATA F83 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _LATB F84 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
@@ -263,32 +507,39 @@ _WPUA F10 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _WPUB F18 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _WPUC F20 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _WPUE F2D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-_main FE0 0 CODE 0 text0 dist/default/production\AutoHood_Draft_2.X.production.o
-start 0 0 CODE 0 init C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-EUSART2_SetOverrunErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+_main 1500 0 CODE 0 text0 dist/default/production\AutoHood_Draft_2.X.production.o
+start 0 0 CODE 0 init C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+___flmul@aexp 12 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@bexp 13 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@prod 14 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@sign D 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@temp 18 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-_RC2STAbits E9D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+motorCW@delay 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+?_ADCC_GetSingleConversion 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_RCEN 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of_motorCCW 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-intlevel0 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-intlevel1 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-intlevel2 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-intlevel3 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
+__accesstop 60 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+intlevel0 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+intlevel1 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+intlevel2 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+intlevel3 0 0 CODE 0 text C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
 __size_of_EUSART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART2_Initialize 1068 0 CODE 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
+delay_ms@milliseconds 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _RC1STAbits F9D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_PMD_Initialize 10E0 0 CODE 0 text2 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_PMD_Initialize 1A70 0 CODE 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\AutoHood_Draft_2.X.production.o
 _ADACCH F71 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ADACCL F70 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
@@ -309,38 +560,41 @@ _rdBlkRegCompleteHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.
 _ANSELA F11 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ANSELB F19 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ANSELC F21 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of_ADCC_GetSingleConversion 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-_EUSART2_SetErrorHandler 1132 0 CODE 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_Initialize 1028 0 CODE 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART2_SetErrorHandler 113C 0 CODE 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of___flge 1774 0 CODE 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
+ADCC_GetSingleConversion@channel 5 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\AutoHood_Draft_2.X.production.o
+_motorCCW 1834 0 CODE 0 text2 dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\AutoHood_Draft_2.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\AutoHood_Draft_2.X.production.o
-EUSART2_SetErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-EUSART1_SetFramingErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-__size_of_EUSART2_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__size_of_EUSART2_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+EUSART1_SetFramingErrorHandler@interruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of___flmul 134C 0 CODE 0 text5 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_motorCCW 18F4 0 CODE 0 text2 dist/default/production\AutoHood_Draft_2.X.production.o
 _INLVLA F0D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _INLVLB F15 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _INLVLC F1D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _INLVLE F2A 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+main@Resolution 24 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+motorCCW@step 6 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@b 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_PIN_MANAGER_Initialize F22 0 CODE 0 text3 dist/default/production\AutoHood_Draft_2.X.production.o
-start_initialization 110C 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
-_eusart1RxLastError 26 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+_PIN_MANAGER_Initialize 18F4 0 CODE 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
+start_initialization 1AB6 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+_eusart1RxLastError 4E 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _ODCONA F0F 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ODCONB F17 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ODCONC F1F 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _OSCFRQ EDE 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AutoHood_Draft_2.X.production.o
-EUSART2_SetFramingErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ADFLTRH F73 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ADFLTRL F72 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
@@ -352,22 +606,20 @@ _ADSTPTL F68 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _RC1REG F99 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _RC1STA F9D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _RC2PPS EF9 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_RC2REG E99 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_RC2STA E9D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _RC3PPS EFA 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _RC6PPS EFD 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_SYSTEM_Initialize 10C4 0 CODE 0 text1 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_SYSTEM_Initialize 1A8A 0 CODE 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
 _RX1PPS EB5 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _TX1REG F9A 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _TX1STA F9E 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_TX2REG E9A 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_TX2STA E9E 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_ADCC_GetSingleConversion 1A54 0 CODE 0 text17 dist/default/production\AutoHood_Draft_2.X.production.o
 _EUSART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _EUSART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
+isa$xinst 0 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
 __size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_I2C1_Status 1 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_ADCC_Initialize FE0 0 CODE 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
+_I2C1_Status 2A 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+main@Voltage 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_ADCC_Initialize 19B2 0 CODE 0 text16 dist/default/production\AutoHood_Draft_2.X.production.o
 _rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\AutoHood_Draft_2.X.production.o
@@ -403,11 +655,15 @@ __Hbank11 0 0 ABS 0 bank11 dist/default/production\AutoHood_Draft_2.X.production
 __Hbank12 0 0 ABS 0 bank12 dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbank13 0 0 ABS 0 bank13 dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbank14 0 0 ABS 0 bank14 dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\AutoHood_Draft_2.X.production.o
-__smallconst F00 0 SMALLCONST 0 smallconst C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
+__smallconst F00 0 SMALLCONST 0 smallconst C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
 _BAUD1CON F9F 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_BAUD2CON E9F 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of_motorCW 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\AutoHood_Draft_2.X.production.o
 __Hconfig 30000C 0 CONFIG 4 config dist/default/production\AutoHood_Draft_2.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\AutoHood_Draft_2.X.production.o
@@ -438,11 +694,12 @@ __Ltext6 0 0 ABS 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext7 0 0 ABS 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext8 0 0 ABS 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART1_FramingErrorHandler 31 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART1_OverrunErrorHandler 2F 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+_EUSART1_FramingErrorHandler 53 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+_EUSART1_OverrunErrorHandler 51 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_EUSART1_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_EUSART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul@grs E 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\AutoHood_Draft_2.X.production.o
 _wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\AutoHood_Draft_2.X.production.o
@@ -462,46 +719,59 @@ __Ltext 0 0 ABS 0 text dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1CON1 F96 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1CON2 F97 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1STAT F95 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+___flge 1670 0 CODE 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\AutoHood_Draft_2.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\AutoHood_Draft_2.X.production.o
-__S0 115A 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__S1 37 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+_RA5 7C6D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+_RA7 7C6F 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__S0 1AE6 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__S1 55 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART2_SetFramingErrorHandler 1132 0 CODE 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART2_SetOverrunErrorHandler 1128 0 CODE 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
 _EUSART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__pnvCOMRAM 27 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-_eusart2RxLastError 25 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-_ADCC_Initialize F90 0 CODE 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
+__pnvCOMRAM 4F 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+_ADCC_Initialize 1962 0 CODE 0 text16 dist/default/production\AutoHood_Draft_2.X.production.o
+motorCW@step 6 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\AutoHood_Draft_2.X.production.o
+main@VoltageActual 20 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_SYSTEM_Initialize 10A6 0 CODE 0 text1 dist/default/production\AutoHood_Draft_2.X.production.o
+_SYSTEM_Initialize 1A70 0 CODE 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
+___xxtofl 134C 0 CODE 0 text4 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\AutoHood_Draft_2.X.production.o
 __Hramtop F00 0 RAM 0 ramtop dist/default/production\AutoHood_Draft_2.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of___xxtofl 1500 0 CODE 0 text4 dist/default/production\AutoHood_Draft_2.X.production.o
 __activetblptr 3 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Htext10 0 0 ABS 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
 __Htext11 0 0 ABS 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
 __Htext12 0 0 ABS 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
 __Htext13 0 0 ABS 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
 __Htext14 0 0 ABS 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
-__size_of_EUSART2_Initialize 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\AutoHood_Draft_2.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\AutoHood_Draft_2.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\AutoHood_Draft_2.X.production.o
+motorCCW@delay 4 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _PIE3bits EC5 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext10 1068 0 CODE 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext11 113C 0 CODE 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext12 1146 0 CODE 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext13 1150 0 CODE 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext14 F90 0 CODE 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext10 1A8A 0 CODE 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext11 1AA2 0 CODE 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext12 19B2 0 CODE 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext13 1AC8 0 CODE 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext14 1AD2 0 CODE 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext15 1ADC 0 CODE 0 text15 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext16 1962 0 CODE 0 text16 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext17 1A26 0 CODE 0 text17 dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_PIN_MANAGER_Initialize F90 0 CODE 0 text3 dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART1_ErrorHandler 2D 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_motorCW 1834 0 CODE 0 text1 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_PIN_MANAGER_Initialize 1962 0 CODE 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
+___flmul F22 0 CODE 0 text5 dist/default/production\AutoHood_Draft_2.X.production.o
+_EUSART1_ErrorHandler 4F 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\AutoHood_Draft_2.X.production.o
@@ -513,16 +783,18 @@ _I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.pro
 __Lcomram 0 0 ABS 0 comram dist/default/production\AutoHood_Draft_2.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\AutoHood_Draft_2.X.production.o
 _LATAbits F83 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART1_SetErrorHandler 1150 0 CODE 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART1_SetErrorHandler 115A 0 CODE 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
+_LATBbits F84 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+_LATCbits F85 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+_EUSART1_SetErrorHandler 1ADC 0 CODE 0 text15 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_EUSART1_SetErrorHandler 1AE6 0 CODE 0 text15 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\AutoHood_Draft_2.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\AutoHood_Draft_2.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-_TX2STAbits E9E 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART1_SetFramingErrorHandler 1150 0 CODE 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
-stackhi E87 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-stacklo 60 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
-__end_of_EUSART1_SetOverrunErrorHandler 1146 0 CODE 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+main@convertedValue 28 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_EUSART1_SetFramingErrorHandler 1ADC 0 CODE 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
+stackhi E87 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+stacklo 60 0 ABS 0 - C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
+__end_of_EUSART1_SetOverrunErrorHandler 1AD2 0 CODE 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1CLKPPS EB7 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\AutoHood_Draft_2.X.production.o
 _OSCCON1 ED8 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
@@ -541,75 +813,75 @@ __Lspace_0 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-__size_of_EUSART2_SetErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_SetFramingErrorHandler 1128 0 CODE 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_SetOverrunErrorHandler 111E 0 CODE 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
+__pbssCOMRAM 2A 0 COMRAM 1 bssCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flge@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+___flge@ff2 5 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _PIR3bits ECD 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__size_of_delay_ms 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-end_of_initialization 1118 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+end_of_initialization 1AC2 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\AutoHood_Draft_2.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\AutoHood_Draft_2.X.production.o
 _TX1STAbits F9E 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+?___flmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_RX 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_TX 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lramtop F00 0 RAM 0 ramtop dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_FramingErrorHandler 2B 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_OverrunErrorHandler 29 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\AutoHood_Draft_2.X.production.o
-__pcinit 110C 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext0 FE0 0 CODE 0 text0 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext1 10A6 0 CODE 0 text1 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext2 10C4 0 CODE 0 text2 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext3 F22 0 CODE 0 text3 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext4 10E0 0 CODE 0 text4 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext5 10F8 0 CODE 0 text5 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext6 1028 0 CODE 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext7 111E 0 CODE 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext8 1128 0 CODE 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
-__ptext9 1132 0 CODE 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
+__pcinit 1AB6 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext0 1500 0 CODE 0 text0 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext1 1774 0 CODE 0 text1 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext2 1834 0 CODE 0 text2 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext3 19F0 0 CODE 0 text3 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext4 134C 0 CODE 0 text4 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext5 F22 0 CODE 0 text5 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext6 1670 0 CODE 0 text6 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext7 1A70 0 CODE 0 text7 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext8 1A54 0 CODE 0 text8 dist/default/production\AutoHood_Draft_2.X.production.o
+__ptext9 18F4 0 CODE 0 text9 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext12 0 0 ABS 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext13 0 0 ABS 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
 __Ltext14 0 0 ABS 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
-__ramtop F00 0 RAM 0 ramtop C:\Users\tyler\AppData\Local\Temp\xcAsg28.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\AutoHood_Draft_2.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\AutoHood_Draft_2.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\AutoHood_Draft_2.X.production.o
+__ramtop F00 0 RAM 0 ramtop C:\Users\tyler\AppData\Local\Temp\xcAs12nk.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\AutoHood_Draft_2.X.production.o
+?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AutoHood_Draft_2.X.production.o
 __psmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\AutoHood_Draft_2.X.production.o
 _SLRCONA F0E 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SLRCONB F16 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SLRCONC F1E 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of__initialization 1118 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of__initialization 1AC2 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+_delay_ms 19F0 0 CODE 0 text3 dist/default/production\AutoHood_Draft_2.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_ErrorHandler 27 0 COMRAM 1 nvCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _ADSTATbits F65 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SP1BRGH F9C 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SP1BRGL F9B 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_SP2BRGH E9C 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_SP2BRGL E9B 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1CON1bits F96 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1CON2bits F97 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_delay_ms 1A26 0 CODE 0 text3 dist/default/production\AutoHood_Draft_2.X.production.o
 __end_of_i2c1_fsmStateTable F21 0 SMALLCONST 0 smallconst dist/default/production\AutoHood_Draft_2.X.production.o
-__pcstackCOMRAM 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_I2C1_Initialize 110C 0 CODE 0 text5 dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART2_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_I2C1_Initialize 1AB6 0 CODE 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1ADD F93 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _SSP1BUF F92 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART1_SetFramingErrorHandler 1146 0 CODE 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
-_EUSART1_SetOverrunErrorHandler 113C 0 CODE 0 text11 dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_main 1028 0 CODE 0 text0 dist/default/production\AutoHood_Draft_2.X.production.o
+_EUSART1_SetFramingErrorHandler 1AD2 0 CODE 0 text14 dist/default/production\AutoHood_Draft_2.X.production.o
+_EUSART1_SetOverrunErrorHandler 1AC8 0 CODE 0 text13 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_main 1670 0 CODE 0 text0 dist/default/production\AutoHood_Draft_2.X.production.o
+motorCW@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 _ADACQ F5C 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ADACT F56 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 _ADCAP F5D 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
@@ -632,19 +904,23 @@ __Lbss 0 0 RAM 1 bss dist/default/production\AutoHood_Draft_2.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\AutoHood_Draft_2.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
+motorCCW@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_EUSART1_Initialize 10A6 0 CODE 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
-__end_of_OSCILLATOR_Initialize 10F8 0 CODE 0 text4 dist/default/production\AutoHood_Draft_2.X.production.o
-__initialization 110C 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_EUSART1_Initialize 19F0 0 CODE 0 text12 dist/default/production\AutoHood_Draft_2.X.production.o
+__end_of_OSCILLATOR_Initialize 1AA2 0 CODE 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
+__initialization 1AB6 0 CODE 0 cinit dist/default/production\AutoHood_Draft_2.X.production.o
+___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+_ADCC_GetSingleConversion 1A26 0 CODE 0 text17 dist/default/production\AutoHood_Draft_2.X.production.o
 _i2c1_fsmStateTable F01 0 SMALLCONST 0 smallconst dist/default/production\AutoHood_Draft_2.X.production.o
 _I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\AutoHood_Draft_2.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\AutoHood_Draft_2.X.production.o
 __Hsmallconst F22 0 SMALLCONST 0 smallconst dist/default/production\AutoHood_Draft_2.X.production.o
+_motorCW 1774 0 CODE 0 text1 dist/default/production\AutoHood_Draft_2.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\AutoHood_Draft_2.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\AutoHood_Draft_2.X.production.o
-EUSART1_SetOverrunErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
+EUSART1_SetOverrunErrorHandler@interruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/production\AutoHood_Draft_2.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production\AutoHood_Draft_2.X.production.o
-_OSCILLATOR_Initialize 10E0 0 CODE 0 text4 dist/default/production\AutoHood_Draft_2.X.production.o
+_OSCILLATOR_Initialize 1A8A 0 CODE 0 text10 dist/default/production\AutoHood_Draft_2.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -669,10 +945,10 @@ _OSCILLATOR_Initialize 10E0 0 CODE 0 text4 dist/default/production\AutoHood_Draf
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text3 0 F22 F22 238 1
+text5 0 F22 F22 BC4 1
+cstackCOMRAM 1 1 1 54 1
 reset_vec 0 0 0 4 1
 smallconst 0 F00 F00 22 1
-bssCOMRAM 1 1 1 36 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

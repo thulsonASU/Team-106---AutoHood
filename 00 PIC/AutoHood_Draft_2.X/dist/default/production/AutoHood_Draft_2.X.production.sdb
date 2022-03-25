@@ -66,8 +66,24 @@ channel_Temp 61
 channel_DAC1 62
 channel_FVR_buf1 63
 ]
+"38 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+[e E9967 . `uc
+ANA 0
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+]
+"6 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"14
+[v _motorCCW motorCCW `(v  1 e 1 0 ]
+"141
+[v _motorCW motorCW `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
@@ -90,10 +106,14 @@ channel_FVR_buf1 63
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"3 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"4 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"131
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
 "66 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 "144
@@ -108,20 +128,6 @@ channel_FVR_buf1 63
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
-"66 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-[v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
-"144
-[v _EUSART2_DefaultFramingErrorHandler EUSART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
-"146
-[v _EUSART2_DefaultOverrunErrorHandler EUSART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
-"154
-[v _EUSART2_DefaultErrorHandler EUSART2_DefaultErrorHandler `(v  1 e 1 0 ]
-"157
-[v _EUSART2_SetFramingErrorHandler EUSART2_SetFramingErrorHandler `(v  1 e 1 0 ]
-"161
-[v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
-"165
-[v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
 "142 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/examples/i2c1_master_example.c
 [v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
 "149
@@ -230,64 +236,13 @@ channel_FVR_buf1 63
 [v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
 "50 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"61
+"60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"75
+"74
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"1287 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
-[v _RC2REG RC2REG `VEuc  1 e 1 @3737 ]
-"1325
-[v _TX2REG TX2REG `VEuc  1 e 1 @3738 ]
-"1370
-[v _SP2BRGL SP2BRGL `VEuc  1 e 1 @3739 ]
-"1408
-[v _SP2BRGH SP2BRGH `VEuc  1 e 1 @3740 ]
-"1446
-[v _RC2STA RC2STA `VEuc  1 e 1 @3741 ]
-[s S1492 . 1 `uc 1 RX9D 1 0 :1:0 
-`uc 1 OERR 1 0 :1:1 
-`uc 1 FERR 1 0 :1:2 
-`uc 1 ADDEN 1 0 :1:3 
-`uc 1 CREN 1 0 :1:4 
-`uc 1 SREN 1 0 :1:5 
-`uc 1 RX9 1 0 :1:6 
-`uc 1 SPEN 1 0 :1:7 
-]
-"1479
-[s S1697 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 RC8_92 1 0 :1:6 
-]
-[s S1700 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 RC92 1 0 :1:6 
-]
-[s S1703 . 1 `uc 1 RCD82 1 0 :1:0 
-]
-[u S1705 . 1 `S1492 1 . 1 0 `S1697 1 . 1 0 `S1700 1 . 1 0 `S1703 1 . 1 0 ]
-[v _RC2STAbits RC2STAbits `VES1705  1 e 1 @3741 ]
-"1620
-[v _TX2STA TX2STA `VEuc  1 e 1 @3742 ]
-[s S1405 . 1 `uc 1 TX9D 1 0 :1:0 
-`uc 1 TRMT 1 0 :1:1 
-`uc 1 BRGH 1 0 :1:2 
-`uc 1 SENDB 1 0 :1:3 
-`uc 1 SYNC 1 0 :1:4 
-`uc 1 TXEN 1 0 :1:5 
-`uc 1 TX9 1 0 :1:6 
-`uc 1 CSRC 1 0 :1:7 
-]
-"1649
-[s S1664 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 TX8_92 1 0 :1:6 
-]
-[s S1667 . 1 `uc 1 TXD82 1 0 :1:0 
-]
-[u S1669 . 1 `S1405 1 . 1 0 `S1664 1 . 1 0 `S1667 1 . 1 0 ]
-[v _TX2STAbits TX2STAbits `VES1669  1 e 1 @3742 ]
-"1776
-[v _BAUD2CON BAUD2CON `VEuc  1 e 1 @3743 ]
-"3599
+"3599 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
 [v _RX1PPS RX1PPS `VEuc  1 e 1 @3765 ]
 "3791
 [v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3767 ]
@@ -536,7 +491,7 @@ channel_FVR_buf1 63
 [v _ADFLTRH ADFLTRH `VEuc  1 e 1 @3955 ]
 "15429
 [v _LATA LATA `VEuc  1 e 1 @3971 ]
-[s S1813 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1710 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -546,7 +501,7 @@ channel_FVR_buf1 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "15456
-[s S1822 . 1 `uc 1 LA0 1 0 :1:0 
+[s S1719 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -555,12 +510,54 @@ channel_FVR_buf1 63
 `uc 1 LA6 1 0 :1:6 
 `uc 1 LA7 1 0 :1:7 
 ]
-[u S1831 . 1 `S1813 1 . 1 0 `S1822 1 . 1 0 ]
-[v _LATAbits LATAbits `VES1831  1 e 1 @3971 ]
+[u S1728 . 1 `S1710 1 . 1 0 `S1719 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1728  1 e 1 @3971 ]
 "15541
 [v _LATB LATB `VEuc  1 e 1 @3972 ]
+[s S1627 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"15568
+[s S1636 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S1645 . 1 `S1627 1 . 1 0 `S1636 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1645  1 e 1 @3972 ]
 "15653
 [v _LATC LATC `VEuc  1 e 1 @3973 ]
+[s S1670 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"15680
+[s S1679 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S1688 . 1 `S1670 1 . 1 0 `S1679 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1688  1 e 1 @3973 ]
 "15765
 [v _TRISA TRISA `VEuc  1 e 1 @3976 ]
 "15887
@@ -768,6 +765,15 @@ channel_FVR_buf1 63
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @3996 ]
 "17878
 [v _RC1STA RC1STA `VEuc  1 e 1 @3997 ]
+[s S1492 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
 "17919
 [s S1501 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
@@ -784,6 +790,15 @@ channel_FVR_buf1 63
 [v _RC1STAbits RC1STAbits `VES1512  1 e 1 @3997 ]
 "18163
 [v _TX1STA TX1STA `VEuc  1 e 1 @3998 ]
+[s S1405 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
 "18227
 [s S1414 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
@@ -817,6 +832,10 @@ channel_FVR_buf1 63
 [v _TX1STAbits TX1STAbits `VES1442  1 e 1 @3998 ]
 "18607
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @3999 ]
+"30252
+[v _RA5 RA5 `VEb  1 e 0 @31853 ]
+"30288
+[v _RA7 RA7 `VEb  1 e 0 @31855 ]
 [s S1341 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
@@ -831,14 +850,6 @@ channel_FVR_buf1 63
 [v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"52 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-[v _eusart2RxLastError eusart2RxLastError `VES1346  1 e 1 0 ]
-"58
-[v _EUSART2_FramingErrorHandler EUSART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
-"59
-[v _EUSART2_OverrunErrorHandler EUSART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
-"60
-[v _EUSART2_ErrorHandler EUSART2_ErrorHandler `*.37(v  1 e 2 0 ]
 "146 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `C[16]*.37(E9951  1 e 32 0 ]
 [s S248 . 36 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.39v 1 callbackPayload 12 12 `us 1 time_out 2 24 `us 1 time_out_value 2 26 `uc 1 address 1 28 `*.39uc 1 data_ptr 2 29 `ui 1 data_length 2 31 `E9951 1 state 1 33 `E355 1 error 1 34 `uc 1 addressNackCheck 1 35 :1:0 
@@ -848,58 +859,116 @@ channel_FVR_buf1 63
 ]
 "165
 [v _I2C1_Status I2C1_Status `S248  1 e 36 0 ]
-"3 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+"4 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
+"35
+[v main@convertedValue convertedValue `us  1 a 2 39 ]
+"12
+[v main@Resolution Resolution `f  1 a 4 35 ]
+"11
+[v main@VoltageActual VoltageActual `f  1 a 4 31 ]
+"10
+[v main@Voltage Voltage `f  1 a 4 27 ]
+"54
+} 0
+"141 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+[v _motorCW motorCW `(v  1 e 1 0 ]
+{
+"154
+[v motorCW@i i `i  1 a 2 8 ]
+"141
+[v motorCW@delay delay `i  1 p 2 3 ]
+[v motorCW@step step `i  1 p 2 5 ]
+"266
+} 0
+"14
+[v _motorCCW motorCCW `(v  1 e 1 0 ]
+{
+"27
+[v motorCCW@i i `i  1 a 2 8 ]
+"14
+[v motorCCW@delay delay `i  1 p 2 3 ]
+[v motorCCW@step step `i  1 p 2 5 ]
+"140
+} 0
+"6
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+[v delay_ms@milliseconds milliseconds `i  1 p 2 0 ]
+"13
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
 "15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2108 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2113 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2116 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2108 1 fAsBytes 4 0 `S2113 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2116  1 a 4 19 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 13 ]
+[s S2184 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2187 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2184 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2187  1 a 2 23 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 18 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 17 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 12 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
 } 0
 "50 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"59
+"58
 } 0
-"75
+"74
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
-"89
+"88
 } 0
 "55 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "121
 } 0
-"61 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
+"60 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"73
+"72
 } 0
 "167 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 {
 "174
-} 0
-"66 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart2.c
-[v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
-{
-"92
-} 0
-"161
-[v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
-{
-[v EUSART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
-"163
-} 0
-"157
-[v _EUSART2_SetFramingErrorHandler EUSART2_SetFramingErrorHandler `(v  1 e 1 0 ]
-{
-[v EUSART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
-"159
-} 0
-"165
-[v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
-{
-[v EUSART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
-"167
 } 0
 "66 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
@@ -928,4 +997,13 @@ channel_FVR_buf1 63
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "105
+} 0
+"131
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E9562  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E9562  1 a 1 wreg ]
+"134
+[v ADCC_GetSingleConversion@channel channel `E9562  1 a 1 4 ]
+"154
 } 0

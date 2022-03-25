@@ -16306,39 +16306,6 @@ _Bool ADCC_HasErrorCrossedLowerThreshold(void);
 uint8_t ADCC_GetConversionStageStatus(void);
 # 56 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/eusart2.h" 1
-# 75 "./mcc_generated_files/eusart2.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart2_status_t;
-# 110 "./mcc_generated_files/eusart2.h"
-void EUSART2_Initialize(void);
-# 158 "./mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_tx_ready(void);
-# 206 "./mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_rx_ready(void);
-# 253 "./mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_tx_done(void);
-# 301 "./mcc_generated_files/eusart2.h"
-eusart2_status_t EUSART2_get_last_status(void);
-# 321 "./mcc_generated_files/eusart2.h"
-uint8_t EUSART2_Read(void);
-# 341 "./mcc_generated_files/eusart2.h"
-void EUSART2_Write(uint8_t txData);
-# 361 "./mcc_generated_files/eusart2.h"
-void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 379 "./mcc_generated_files/eusart2.h"
-void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 397 "./mcc_generated_files/eusart2.h"
-void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "./mcc_generated_files/mcc.h" 2
-
 # 1 "./mcc_generated_files/eusart1.h" 1
 # 75 "./mcc_generated_files/eusart1.h"
 typedef union {
@@ -16370,14 +16337,283 @@ void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "./mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 58 "./mcc_generated_files/mcc.h" 2
-# 73 "./mcc_generated_files/mcc.h"
+# 57 "./mcc_generated_files/mcc.h" 2
+# 72 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "./mcc_generated_files/mcc.h"
+# 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "./mcc_generated_files/mcc.h"
+# 98 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 1 "main.c" 2
+
+# 1 "./stepper.h" 1
+
+
+
+
+
+void delay_ms(int milliseconds)
+{
+   while(milliseconds > 0)
+   {
+      milliseconds--;
+       _delay((unsigned long)((990)*(64000000/4000000.0)));
+   }
+}
+void motorCCW(int delay, int step)
+{
+
+
+
+
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+    for(int i = 0; i < step; i++)
+    {
+
+
+
+
+    do { LATBbits.LATB0 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+
+    do { LATBbits.LATB3 = 1; } while(0);
+    do { LATBbits.LATB5 = 0; } while(0);
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 0; } while(0);
+    do { LATBbits.LATB2 = 1; } while(0);
+
+    do { LATBbits.LATB3 = 1; } while(0);
+    do { LATBbits.LATB5 = 0; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 0; } while(0);
+    do { LATBbits.LATB2 = 1; } while(0);
+
+    do { LATBbits.LATB3 = 0; } while(0);
+    do { LATBbits.LATB5 = 1; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+
+    do { LATBbits.LATB3 = 0; } while(0);
+    do { LATBbits.LATB5 = 1; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+
+    do { LATBbits.LATB3 = 1; } while(0);
+    do { LATBbits.LATB5 = 0; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+    }
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+}
+void motorCW(int delay, int step)
+{
+
+
+
+
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+    for( int i = 0; i < step; i++)
+    {
+
+
+
+
+    do { LATBbits.LATB0 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+
+    do { LATBbits.LATB3 = 1; } while(0);
+    do { LATBbits.LATB5 = 0; } while(0);
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+
+    do { LATBbits.LATB3 = 0; } while(0);
+    do { LATBbits.LATB5 = 1; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 0; } while(0);
+    do { LATBbits.LATB2 = 1; } while(0);
+
+    do { LATBbits.LATB3 = 0; } while(0);
+    do { LATBbits.LATB5 = 1; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 0; } while(0);
+    do { LATBbits.LATB2 = 1; } while(0);
+
+    do { LATBbits.LATB3 = 1; } while(0);
+    do { LATBbits.LATB5 = 0; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+
+
+
+
+    do { LATBbits.LATB0 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+
+    do { LATBbits.LATB3 = 1; } while(0);
+    do { LATBbits.LATB5 = 0; } while(0);
+
+
+
+    do { LATBbits.LATB4 = 1; } while(0);
+    do { LATBbits.LATB1 = 1; } while(0);
+
+    delay_ms(delay);
+
+
+    }
+
+    do { LATBbits.LATB4 = 0; } while(0);
+    do { LATBbits.LATB1 = 0; } while(0);
+
+}
+# 2 "main.c" 2
 
 
 void main(void)
@@ -16385,11 +16621,49 @@ void main(void)
 
     SYSTEM_Initialize();
 
+
+    float Voltage;
+    float VoltageActual;
+    float Resolution = 0.34;
+
+
+    ADCC_Initialize();
+
+
+
     while (1)
     {
 
 
-        do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
-        _delay((unsigned long)((500)*(16000000/4000.0)));
+        if(RA7 == 0)
+        {
+            do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+            _delay((unsigned long)((200)*(64000000/4000.0)));
+            motorCW(100,5);
+            motorCCW(100,5);
+
+        }
+        else
+        {
+            do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
+            _delay((unsigned long)((500)*(64000000/4000.0)));
+            adc_result_t convertedValue;
+
+
+            convertedValue = ADCC_GetSingleConversion(ANA);
+            Voltage = (float) convertedValue;
+
+            VoltageActual = (Resolution * Voltage);
+
+            if (VoltageActual>70)
+            RA5=1;
+            else
+            {
+            RA5=0;
+            }
+
+        }
+
+
     }
 }
