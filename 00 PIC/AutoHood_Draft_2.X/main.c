@@ -48,7 +48,7 @@ void main(void)
     {
         // Breadboard System test branch
         // Add your application code
-        if(BTN_D_GetValue() == 0)
+        if(RA7 == 0)
         {    
             LED_M_SetHigh();
             __delay_ms(200);
@@ -61,6 +61,8 @@ void main(void)
         }
         else
         {
+            LED_P_Toggle();
+            __delay_ms(200);
             
             adc_result_t convertedValue;
    
@@ -68,7 +70,7 @@ void main(void)
             Voltage = (float) convertedValue;
    
             VoltageActual = (Resolution * Voltage);
-   
+            
             if (VoltageActual>70) //mV
             {
                 LED_A_SetHigh();

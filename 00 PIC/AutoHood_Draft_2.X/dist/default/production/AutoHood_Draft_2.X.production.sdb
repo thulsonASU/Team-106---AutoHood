@@ -66,7 +66,7 @@ channel_Temp 61
 channel_DAC1 62
 channel_FVR_buf1 63
 ]
-"38 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
+"69 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
 [e E9967 . `uc
 ANA 0
 channel_VSS 60
@@ -491,7 +491,7 @@ channel_FVR_buf1 63
 [v _ADFLTRH ADFLTRH `VEuc  1 e 1 @3955 ]
 "15429
 [v _LATA LATA `VEuc  1 e 1 @3971 ]
-[s S1670 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1668 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -501,7 +501,7 @@ channel_FVR_buf1 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "15456
-[s S1679 . 1 `uc 1 LA0 1 0 :1:0 
+[s S1677 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -510,8 +510,8 @@ channel_FVR_buf1 63
 `uc 1 LA6 1 0 :1:6 
 `uc 1 LA7 1 0 :1:7 
 ]
-[u S1688 . 1 `S1670 1 . 1 0 `S1679 1 . 1 0 ]
-[v _LATAbits LATAbits `VES1688  1 e 1 @3971 ]
+[u S1686 . 1 `S1668 1 . 1 0 `S1677 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1686  1 e 1 @3971 ]
 "15541
 [v _LATB LATB `VEuc  1 e 1 @3972 ]
 [s S1627 . 1 `uc 1 LATB0 1 0 :1:0 
@@ -537,27 +537,6 @@ channel_FVR_buf1 63
 [v _LATBbits LATBbits `VES1645  1 e 1 @3972 ]
 "15653
 [v _LATC LATC `VEuc  1 e 1 @3973 ]
-[s S1717 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 LATC3 1 0 :1:3 
-`uc 1 LATC4 1 0 :1:4 
-`uc 1 LATC5 1 0 :1:5 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-"15680
-[s S1726 . 1 `uc 1 LC0 1 0 :1:0 
-`uc 1 LC1 1 0 :1:1 
-`uc 1 LC2 1 0 :1:2 
-`uc 1 LC3 1 0 :1:3 
-`uc 1 LC4 1 0 :1:4 
-`uc 1 LC5 1 0 :1:5 
-`uc 1 LC6 1 0 :1:6 
-`uc 1 LC7 1 0 :1:7 
-]
-[u S1735 . 1 `S1717 1 . 1 0 `S1726 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1735  1 e 1 @3973 ]
 "15765
 [v _TRISA TRISA `VEuc  1 e 1 @3976 ]
 "15887
@@ -860,15 +839,15 @@ channel_FVR_buf1 63
 "4 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"35
+"67
 [v main@convertedValue convertedValue `us  1 a 2 39 ]
-"12
+"40
 [v main@Resolution Resolution `f  1 a 4 35 ]
-"11
+"39
 [v main@VoltageActual VoltageActual `f  1 a 4 31 ]
-"10
+"38
 [v main@Voltage Voltage `f  1 a 4 27 ]
-"54
+"85
 } 0
 "141 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
 [v _motorCW motorCW `(v  1 e 1 0 ]
@@ -914,17 +893,17 @@ channel_FVR_buf1 63
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2107 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2059 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2112 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2115 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2107 1 fAsBytes 4 0 `S2112 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2115  1 a 4 19 ]
+[s S2064 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2067 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2059 1 fAsBytes 4 0 `S2064 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2067  1 a 4 19 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 13 ]
-[s S2183 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2135 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2186 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2183 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2186  1 a 2 23 ]
+[u S2138 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2135 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2138  1 a 2 23 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 18 ]
 "11

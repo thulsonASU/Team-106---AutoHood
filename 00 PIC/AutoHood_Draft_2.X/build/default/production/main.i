@@ -15900,9 +15900,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 426 "./mcc_generated_files/pin_manager.h"
+# 386 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 438 "./mcc_generated_files/pin_manager.h"
+# 398 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -16622,6 +16622,34 @@ void main(void)
     SYSTEM_Initialize();
 
 
+
+    do { LATAbits.LATA1 = 1; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+    do { LATAbits.LATA2 = 1; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+    do { LATAbits.LATA4 = 1; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+    do { LATAbits.LATA5 = 1; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+
+
+    do { LATAbits.LATA1 = 0; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+    do { LATAbits.LATA2 = 0; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+    do { LATAbits.LATA4 = 0; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+    do { LATAbits.LATA5 = 0; } while(0);
+    _delay((unsigned long)((200)*(64000000/4000.0)));
+
+
     float Voltage;
     float VoltageActual;
     float Resolution = 0.34;
@@ -16637,18 +16665,21 @@ void main(void)
 
         if(RA7 == 0)
         {
-
+            do { LATAbits.LATA4 = 1; } while(0);
             _delay((unsigned long)((200)*(64000000/4000.0)));
+
             motorCW(100,5);
             motorCCW(100,5);
 
+            do { LATAbits.LATA4 = 0; } while(0);
+            _delay((unsigned long)((200)*(64000000/4000.0)));
         }
         else
         {
-            do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
-            _delay((unsigned long)((500)*(64000000/4000.0)));
-            adc_result_t convertedValue;
+            do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
+            _delay((unsigned long)((200)*(64000000/4000.0)));
 
+            adc_result_t convertedValue;
 
             convertedValue = ADCC_GetSingleConversion(ANA);
             Voltage = (float) convertedValue;
@@ -16656,14 +16687,14 @@ void main(void)
             VoltageActual = (Resolution * Voltage);
 
             if (VoltageActual>70)
-            do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+            {
+                do { LATAbits.LATA1 = 1; } while(0);
+            }
             else
             {
-            do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+                do { LATAbits.LATA1 = 0; } while(0);
             }
-
         }
-
 
     }
 }
