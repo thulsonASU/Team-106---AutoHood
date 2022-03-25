@@ -3107,7 +3107,7 @@
          <value>DSM enabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ADACTPPS%aux1"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ADACTPPS%aux0"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
@@ -3331,7 +3331,7 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RXPPS%aux0"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RXPPS%aux1"/>
          <value>23</value>
       </entry>
       <entry>
@@ -8073,12 +8073,12 @@
          <hash>c548b732cafaf81601ee38c4e1d5ae984c00fef02e67e7696f9bc47709bccccf</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\adcc.h</file>
-         <hash>b45f4e5813503df96bdb873abb306db8b07cafe4c2102fe06d83997e172d017e</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.h</file>
          <hash>f95fadb7f27a282dfe7cb5b79f651884c68e0fc75e376f9261acc32fee81e04a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adcc.h</file>
+         <hash>b45f4e5813503df96bdb873abb306db8b07cafe4c2102fe06d83997e172d017e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
