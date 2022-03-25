@@ -28,21 +28,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30288 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 30288: extern volatile __bit RA7 __attribute__((address(0x7C6F)));
 [v _RA7 `Vb ~T0 @X0 0 e@31855 ]
-"15659
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15659:     struct {
-[s S789 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S789 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"15669
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15669:     struct {
-[s S790 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S790 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
-"15658
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15658: typedef union {
-[u S788 `S789 1 `S790 1 ]
-[n S788 . . . ]
-"15680
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15680: extern volatile LATCbits_t LATCbits __attribute__((address(0xF85)));
-[v _LATCbits `VS788 ~T0 @X0 0 e@3973 ]
 "15435
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15435:     struct {
 [s S783 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -65,9 +50,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "249 ./mcc_generated_files/adcc.h
 [; ;./mcc_generated_files/adcc.h: 249: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
 [v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E9967 ]
-"30252 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 30252: extern volatile __bit RA5 __attribute__((address(0x7C6D)));
-[v _RA5 `Vb ~T0 @X0 0 e@31853 ]
+"15659 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15659:     struct {
+[s S789 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S789 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"15669
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15669:     struct {
+[s S790 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S790 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
+"15658
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15658: typedef union {
+[u S788 `S789 1 `S790 1 ]
+[n S788 . . . ]
+"15680
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 15680: extern volatile LATCbits_t LATCbits __attribute__((address(0xF85)));
+[v _LATCbits `VS788 ~T0 @X0 0 e@3973 ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h: 54: __asm("RX2PPS equ 0E8Dh");
 [; <" RX2PPS equ 0E8Dh ;# ">
@@ -2138,13 +2135,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24
 [; ;main.c: 24:         {
 {
-"25
-[; ;main.c: 25:             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
-[e :U 1713 ]
-{
-[e = . . _LATCbits 0 4 -> ~ -> . . _LATCbits 0 4 `i `uc ]
-}
-[e :U 1712 ]
 "26
 [; ;main.c: 26:             _delay((unsigned long)((200)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
@@ -2157,7 +2147,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30
 [; ;main.c: 30:         }
 }
-[e $U 1714  ]
+[e $U 1711  ]
 "31
 [; ;main.c: 31:         else
 [e :U 1710 ]
@@ -2166,11 +2156,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "33
 [; ;main.c: 33:             do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0);
-[e :U 1717 ]
+[e :U 1714 ]
 {
 [e = . . _LATAbits 0 6 -> ~ -> . . _LATAbits 0 6 `i `uc ]
 }
-[e :U 1716 ]
+[e :U 1713 ]
 "34
 [; ;main.c: 34:             _delay((unsigned long)((500)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
@@ -2188,20 +2178,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _VoltageActual * _Resolution _Voltage ]
 "43
 [; ;main.c: 43:             if (VoltageActual>70)
-[e $ ! > _VoltageActual -> -> 70 `i `f 1718  ]
+[e $ ! > _VoltageActual -> -> 70 `i `f 1715  ]
 "44
-[; ;main.c: 44:             RA5=1;
-[e = _RA5 -> -> 1 `i `b ]
+[; ;main.c: 44:             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+[e :U 1718 ]
+{
+[e = . . _LATCbits 0 4 -> ~ -> . . _LATCbits 0 4 `i `uc ]
+}
+[e :U 1717 ]
 [e $U 1719  ]
 "45
 [; ;main.c: 45:             else
-[e :U 1718 ]
+[e :U 1715 ]
 "46
 [; ;main.c: 46:             {
 {
 "47
-[; ;main.c: 47:             RA5=0;
-[e = _RA5 -> -> 0 `i `b ]
+[; ;main.c: 47:             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+[e :U 1722 ]
+{
+[e = . . _LATCbits 0 4 -> ~ -> . . _LATCbits 0 4 `i `uc ]
+}
+[e :U 1721 ]
 "48
 [; ;main.c: 48:             }
 }
@@ -2209,7 +2207,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "50
 [; ;main.c: 50:         }
 }
-[e :U 1714 ]
+[e :U 1711 ]
 "53
 [; ;main.c: 53:     }
 }

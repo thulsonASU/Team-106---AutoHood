@@ -16637,7 +16637,7 @@ void main(void)
 
         if(RA7 == 0)
         {
-            do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
+
             _delay((unsigned long)((200)*(64000000/4000.0)));
             motorCW(100,5);
             motorCCW(100,5);
@@ -16656,10 +16656,10 @@ void main(void)
             VoltageActual = (Resolution * Voltage);
 
             if (VoltageActual>70)
-            RA5=1;
+            do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
             else
             {
-            RA5=0;
+            do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0);
             }
 
         }
