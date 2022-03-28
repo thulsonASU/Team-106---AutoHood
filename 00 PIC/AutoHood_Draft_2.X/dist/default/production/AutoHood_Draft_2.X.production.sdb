@@ -78,7 +78,7 @@ channel_FVR_buf1 63
 [v _delay_ms delay_ms `(v  1 e 1 0 ]
 "14
 [v _motorCCW motorCCW `(v  1 e 1 0 ]
-"141
+"150
 [v _motorCW motorCW `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -849,25 +849,25 @@ channel_FVR_buf1 63
 [v main@Voltage Voltage `f  1 a 4 27 ]
 "85
 } 0
-"141 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
+"150 C:\Users\tyler\MPLABXProjects\314_Github\Team-106---AutoHood\00 PIC\AutoHood_Draft_2.X/stepper.h
 [v _motorCW motorCW `(v  1 e 1 0 ]
 {
-"154
-[v motorCW@i i `i  1 a 2 8 ]
-"141
+"164
+[v motorCW@i i `i  1 a 2 9 ]
+"150
 [v motorCW@delay delay `i  1 p 2 3 ]
 [v motorCW@step step `i  1 p 2 5 ]
-"266
+"277
 } 0
 "14
 [v _motorCCW motorCCW `(v  1 e 1 0 ]
 {
-"27
-[v motorCCW@i i `i  1 a 2 8 ]
+"28
+[v motorCCW@i i `i  1 a 2 9 ]
 "14
 [v motorCCW@delay delay `i  1 p 2 3 ]
 [v motorCCW@step step `i  1 p 2 5 ]
-"140
+"149
 } 0
 "6
 [v _delay_ms delay_ms `(v  1 e 1 0 ]

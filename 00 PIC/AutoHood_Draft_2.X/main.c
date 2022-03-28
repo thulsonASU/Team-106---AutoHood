@@ -71,7 +71,7 @@ void main(void)
    
             VoltageActual = (Resolution * Voltage);
             
-            if (VoltageActual>70) //mV
+            if (VoltageActual > 100) //mV
             {
                 LED_A_SetHigh();
             }

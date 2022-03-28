@@ -16371,6 +16371,7 @@ void motorCCW(int delay, int step)
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
     for(int i = 0; i < step; i++)
@@ -16381,102 +16382,109 @@ void motorCCW(int delay, int step)
 
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATBbits.LATB2 = 0; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
+
 
     do { LATBbits.LATB3 = 1; } while(0);
     do { LATBbits.LATB5 = 0; } while(0);
+     _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 0; } while(0);
     do { LATBbits.LATB2 = 1; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
+
 
     do { LATBbits.LATB3 = 1; } while(0);
     do { LATBbits.LATB5 = 0; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 0; } while(0);
     do { LATBbits.LATB2 = 1; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 0; } while(0);
     do { LATBbits.LATB5 = 1; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
 
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATBbits.LATB2 = 0; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 0; } while(0);
     do { LATBbits.LATB5 = 1; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
 
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATBbits.LATB2 = 0; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 1; } while(0);
     do { LATBbits.LATB5 = 0; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
 
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
 
 
@@ -16485,6 +16493,7 @@ void motorCCW(int delay, int step)
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 }
 void motorCW(int delay, int step)
@@ -16498,6 +16507,7 @@ void motorCW(int delay, int step)
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
     for( int i = 0; i < step; i++)
@@ -16508,102 +16518,103 @@ void motorCW(int delay, int step)
 
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATBbits.LATB2 = 0; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 1; } while(0);
     do { LATBbits.LATB5 = 0; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATBbits.LATB2 = 0; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 0; } while(0);
     do { LATBbits.LATB5 = 1; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 0; } while(0);
     do { LATBbits.LATB2 = 1; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 0; } while(0);
     do { LATBbits.LATB5 = 1; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 0; } while(0);
     do { LATBbits.LATB2 = 1; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 1; } while(0);
     do { LATBbits.LATB5 = 0; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
-
 
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 
 
 
 
     do { LATBbits.LATB0 = 1; } while(0);
     do { LATBbits.LATB2 = 0; } while(0);
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
     do { LATBbits.LATB3 = 1; } while(0);
     do { LATBbits.LATB5 = 0; } while(0);
-
+    _delay((unsigned long)((10)*(64000000/4000.0)));
 
 
     do { LATBbits.LATB4 = 1; } while(0);
     do { LATBbits.LATB1 = 1; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
     delay_ms(delay);
 
 
@@ -16611,7 +16622,7 @@ void motorCW(int delay, int step)
 
     do { LATBbits.LATB4 = 0; } while(0);
     do { LATBbits.LATB1 = 0; } while(0);
-
+    _delay((unsigned long)((30)*(64000000/4000.0)));
 }
 # 2 "main.c" 2
 
@@ -16686,7 +16697,7 @@ void main(void)
 
             VoltageActual = (Resolution * Voltage);
 
-            if (VoltageActual>70)
+            if (VoltageActual > 100)
             {
                 do { LATAbits.LATA1 = 1; } while(0);
             }

@@ -1421,666 +1421,792 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1449 ]
-"27
-[; ;./stepper.h: 27:     for(int i = 0; i < step; i++)
+"25
+[; ;./stepper.h: 25:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"28
+[; ;./stepper.h: 28:     for(int i = 0; i < step; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 1454  ]
 [e :U 1451 ]
-"28
-[; ;./stepper.h: 28:     {
+"29
+[; ;./stepper.h: 29:     {
 {
-"33
-[; ;./stepper.h: 33:     do { LATBbits.LATB0 = 1; } while(0);
+"34
+[; ;./stepper.h: 34:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 1457 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1456 ]
-"34
-[; ;./stepper.h: 34:     do { LATBbits.LATB2 = 0; } while(0);
+"35
+[; ;./stepper.h: 35:     do { LATBbits.LATB2 = 0; } while(0);
 [e :U 1460 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1459 ]
 "36
-[; ;./stepper.h: 36:     do { LATBbits.LATB3 = 1; } while(0);
+[; ;./stepper.h: 36:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"39
+[; ;./stepper.h: 39:     do { LATBbits.LATB3 = 1; } while(0);
 [e :U 1463 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1462 ]
-"37
-[; ;./stepper.h: 37:     do { LATBbits.LATB5 = 0; } while(0);
+"40
+[; ;./stepper.h: 40:     do { LATBbits.LATB5 = 0; } while(0);
 [e :U 1466 ]
 {
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 1465 ]
-"40
-[; ;./stepper.h: 40:     do { LATBbits.LATB4 = 1; } while(0);
+"41
+[; ;./stepper.h: 41:      _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"44
+[; ;./stepper.h: 44:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1469 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1468 ]
-"41
-[; ;./stepper.h: 41:     do { LATBbits.LATB1 = 1; } while(0);
+"45
+[; ;./stepper.h: 45:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1472 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1471 ]
-"43
-[; ;./stepper.h: 43:     delay_ms(delay);
-[e ( _delay_ms (1 _delay ]
+"46
+[; ;./stepper.h: 46:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
 "47
-[; ;./stepper.h: 47:     do { LATBbits.LATB4 = 0; } while(0);
+[; ;./stepper.h: 47:     delay_ms(delay);
+[e ( _delay_ms (1 _delay ]
+"50
+[; ;./stepper.h: 50:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1475 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1474 ]
-"48
-[; ;./stepper.h: 48:     do { LATBbits.LATB1 = 0; } while(0);
+"51
+[; ;./stepper.h: 51:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1478 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1477 ]
-"54
-[; ;./stepper.h: 54:     do { LATBbits.LATB0 = 0; } while(0);
+"52
+[; ;./stepper.h: 52:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"57
+[; ;./stepper.h: 57:     do { LATBbits.LATB0 = 0; } while(0);
 [e :U 1481 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 1480 ]
-"55
-[; ;./stepper.h: 55:     do { LATBbits.LATB2 = 1; } while(0);
+"58
+[; ;./stepper.h: 58:     do { LATBbits.LATB2 = 1; } while(0);
 [e :U 1484 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1483 ]
-"57
-[; ;./stepper.h: 57:     do { LATBbits.LATB3 = 1; } while(0);
+"59
+[; ;./stepper.h: 59:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"62
+[; ;./stepper.h: 62:     do { LATBbits.LATB3 = 1; } while(0);
 [e :U 1487 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1486 ]
-"58
-[; ;./stepper.h: 58:     do { LATBbits.LATB5 = 0; } while(0);
+"63
+[; ;./stepper.h: 63:     do { LATBbits.LATB5 = 0; } while(0);
 [e :U 1490 ]
 {
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 1489 ]
-"62
-[; ;./stepper.h: 62:     do { LATBbits.LATB4 = 1; } while(0);
+"64
+[; ;./stepper.h: 64:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"67
+[; ;./stepper.h: 67:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1493 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1492 ]
-"63
-[; ;./stepper.h: 63:     do { LATBbits.LATB1 = 1; } while(0);
+"68
+[; ;./stepper.h: 68:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1496 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1495 ]
-"65
-[; ;./stepper.h: 65:     delay_ms(delay);
-[e ( _delay_ms (1 _delay ]
 "69
-[; ;./stepper.h: 69:     do { LATBbits.LATB4 = 0; } while(0);
+[; ;./stepper.h: 69:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"70
+[; ;./stepper.h: 70:     delay_ms(delay);
+[e ( _delay_ms (1 _delay ]
+"73
+[; ;./stepper.h: 73:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1499 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1498 ]
-"70
-[; ;./stepper.h: 70:     do { LATBbits.LATB1 = 0; } while(0);
+"74
+[; ;./stepper.h: 74:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1502 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1501 ]
-"76
-[; ;./stepper.h: 76:     do { LATBbits.LATB0 = 0; } while(0);
+"75
+[; ;./stepper.h: 75:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"80
+[; ;./stepper.h: 80:     do { LATBbits.LATB0 = 0; } while(0);
 [e :U 1505 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 1504 ]
-"77
-[; ;./stepper.h: 77:     do { LATBbits.LATB2 = 1; } while(0);
+"81
+[; ;./stepper.h: 81:     do { LATBbits.LATB2 = 1; } while(0);
 [e :U 1508 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1507 ]
-"79
-[; ;./stepper.h: 79:     do { LATBbits.LATB3 = 0; } while(0);
+"82
+[; ;./stepper.h: 82:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"84
+[; ;./stepper.h: 84:     do { LATBbits.LATB3 = 0; } while(0);
 [e :U 1511 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 1510 ]
-"80
-[; ;./stepper.h: 80:     do { LATBbits.LATB5 = 1; } while(0);
+"85
+[; ;./stepper.h: 85:     do { LATBbits.LATB5 = 1; } while(0);
 [e :U 1514 ]
 {
 [e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 1513 ]
-"84
-[; ;./stepper.h: 84:     do { LATBbits.LATB4 = 1; } while(0);
+"86
+[; ;./stepper.h: 86:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"89
+[; ;./stepper.h: 89:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1517 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1516 ]
-"85
-[; ;./stepper.h: 85:     do { LATBbits.LATB1 = 1; } while(0);
+"90
+[; ;./stepper.h: 90:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1520 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1519 ]
-"87
-[; ;./stepper.h: 87:     delay_ms(delay);
+"92
+[; ;./stepper.h: 92:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"93
+[; ;./stepper.h: 93:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"91
-[; ;./stepper.h: 91:     do { LATBbits.LATB4 = 0; } while(0);
+"96
+[; ;./stepper.h: 96:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1523 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1522 ]
-"92
-[; ;./stepper.h: 92:     do { LATBbits.LATB1 = 0; } while(0);
+"97
+[; ;./stepper.h: 97:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1526 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1525 ]
 "98
-[; ;./stepper.h: 98:     do { LATBbits.LATB0 = 1; } while(0);
+[; ;./stepper.h: 98:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"103
+[; ;./stepper.h: 103:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 1529 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1528 ]
-"99
-[; ;./stepper.h: 99:     do { LATBbits.LATB2 = 0; } while(0);
+"104
+[; ;./stepper.h: 104:     do { LATBbits.LATB2 = 0; } while(0);
 [e :U 1532 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1531 ]
-"101
-[; ;./stepper.h: 101:     do { LATBbits.LATB3 = 0; } while(0);
+"105
+[; ;./stepper.h: 105:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"107
+[; ;./stepper.h: 107:     do { LATBbits.LATB3 = 0; } while(0);
 [e :U 1535 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 1534 ]
-"102
-[; ;./stepper.h: 102:     do { LATBbits.LATB5 = 1; } while(0);
+"108
+[; ;./stepper.h: 108:     do { LATBbits.LATB5 = 1; } while(0);
 [e :U 1538 ]
 {
 [e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 1537 ]
-"106
-[; ;./stepper.h: 106:     do { LATBbits.LATB4 = 1; } while(0);
+"109
+[; ;./stepper.h: 109:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"112
+[; ;./stepper.h: 112:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1541 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1540 ]
-"107
-[; ;./stepper.h: 107:     do { LATBbits.LATB1 = 1; } while(0);
+"113
+[; ;./stepper.h: 113:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1544 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1543 ]
-"109
-[; ;./stepper.h: 109:     delay_ms(delay);
+"114
+[; ;./stepper.h: 114:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"115
+[; ;./stepper.h: 115:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"113
-[; ;./stepper.h: 113:     do { LATBbits.LATB4 = 0; } while(0);
+"119
+[; ;./stepper.h: 119:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1547 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1546 ]
-"114
-[; ;./stepper.h: 114:     do { LATBbits.LATB1 = 0; } while(0);
+"120
+[; ;./stepper.h: 120:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1550 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1549 ]
-"120
-[; ;./stepper.h: 120:     do { LATBbits.LATB0 = 1; } while(0);
+"121
+[; ;./stepper.h: 121:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"126
+[; ;./stepper.h: 126:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 1553 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1552 ]
-"121
-[; ;./stepper.h: 121:     do { LATBbits.LATB2 = 0; } while(0);
+"127
+[; ;./stepper.h: 127:     do { LATBbits.LATB2 = 0; } while(0);
 [e :U 1556 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1555 ]
-"123
-[; ;./stepper.h: 123:     do { LATBbits.LATB3 = 1; } while(0);
+"128
+[; ;./stepper.h: 128:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"130
+[; ;./stepper.h: 130:     do { LATBbits.LATB3 = 1; } while(0);
 [e :U 1559 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1558 ]
-"124
-[; ;./stepper.h: 124:     do { LATBbits.LATB5 = 0; } while(0);
+"131
+[; ;./stepper.h: 131:     do { LATBbits.LATB5 = 0; } while(0);
 [e :U 1562 ]
 {
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 1561 ]
-"128
-[; ;./stepper.h: 128:     do { LATBbits.LATB4 = 1; } while(0);
+"132
+[; ;./stepper.h: 132:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"135
+[; ;./stepper.h: 135:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1565 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1564 ]
-"129
-[; ;./stepper.h: 129:     do { LATBbits.LATB1 = 1; } while(0);
+"136
+[; ;./stepper.h: 136:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1568 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1567 ]
-"131
-[; ;./stepper.h: 131:     delay_ms(delay);
+"138
+[; ;./stepper.h: 138:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"139
+[; ;./stepper.h: 139:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"134
-[; ;./stepper.h: 134:     }
+"142
+[; ;./stepper.h: 142:     }
 }
 [e ++ _i -> 1 `i ]
 [e :U 1454 ]
 [e $ < _i _step 1451  ]
 [e :U 1452 ]
 }
-"137
-[; ;./stepper.h: 137:     do { LATBbits.LATB4 = 0; } while(0);
+"145
+[; ;./stepper.h: 145:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1571 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1570 ]
-"138
-[; ;./stepper.h: 138:     do { LATBbits.LATB1 = 0; } while(0);
+"146
+[; ;./stepper.h: 146:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1574 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1573 ]
-"140
-[; ;./stepper.h: 140: }
+"147
+[; ;./stepper.h: 147:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"149
+[; ;./stepper.h: 149: }
 [e :UE 1444 ]
 }
-"141
-[; ;./stepper.h: 141: void motorCW(int delay, int step)
+"150
+[; ;./stepper.h: 150: void motorCW(int delay, int step)
 [v _motorCW `(v ~T0 @X0 1 ef2`i`i ]
-"142
-[; ;./stepper.h: 142: {
+"151
+[; ;./stepper.h: 151: {
 {
 [e :U _motorCW ]
-"141
-[; ;./stepper.h: 141: void motorCW(int delay, int step)
+"150
+[; ;./stepper.h: 150: void motorCW(int delay, int step)
 [v _delay `i ~T0 @X0 1 r1 ]
 [v _step `i ~T0 @X0 1 r2 ]
-"142
-[; ;./stepper.h: 142: {
+"151
+[; ;./stepper.h: 151: {
 [f ]
-"150
-[; ;./stepper.h: 150:     do { LATBbits.LATB4 = 0; } while(0);
+"159
+[; ;./stepper.h: 159:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1578 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1577 ]
-"151
-[; ;./stepper.h: 151:     do { LATBbits.LATB1 = 0; } while(0);
+"160
+[; ;./stepper.h: 160:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1581 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1580 ]
-"154
-[; ;./stepper.h: 154:     for( int i = 0; i < step; i++)
+"161
+[; ;./stepper.h: 161:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"164
+[; ;./stepper.h: 164:     for( int i = 0; i < step; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 1585  ]
 [e :U 1582 ]
-"155
-[; ;./stepper.h: 155:     {
+"165
+[; ;./stepper.h: 165:     {
 {
-"160
-[; ;./stepper.h: 160:     do { LATBbits.LATB0 = 1; } while(0);
+"170
+[; ;./stepper.h: 170:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 1588 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1587 ]
-"161
-[; ;./stepper.h: 161:     do { LATBbits.LATB2 = 0; } while(0);
+"171
+[; ;./stepper.h: 171:     do { LATBbits.LATB2 = 0; } while(0);
 [e :U 1591 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1590 ]
-"163
-[; ;./stepper.h: 163:     do { LATBbits.LATB3 = 1; } while(0);
+"172
+[; ;./stepper.h: 172:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"174
+[; ;./stepper.h: 174:     do { LATBbits.LATB3 = 1; } while(0);
 [e :U 1594 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1593 ]
-"164
-[; ;./stepper.h: 164:     do { LATBbits.LATB5 = 0; } while(0);
+"175
+[; ;./stepper.h: 175:     do { LATBbits.LATB5 = 0; } while(0);
 [e :U 1597 ]
 {
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 1596 ]
-"167
-[; ;./stepper.h: 167:     do { LATBbits.LATB4 = 1; } while(0);
+"176
+[; ;./stepper.h: 176:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"178
+[; ;./stepper.h: 178:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1600 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1599 ]
-"168
-[; ;./stepper.h: 168:     do { LATBbits.LATB1 = 1; } while(0);
+"179
+[; ;./stepper.h: 179:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1603 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1602 ]
-"170
-[; ;./stepper.h: 170:     delay_ms(delay);
+"180
+[; ;./stepper.h: 180:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"181
+[; ;./stepper.h: 181:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"174
-[; ;./stepper.h: 174:     do { LATBbits.LATB4 = 0; } while(0);
+"184
+[; ;./stepper.h: 184:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1606 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1605 ]
-"175
-[; ;./stepper.h: 175:     do { LATBbits.LATB1 = 0; } while(0);
+"185
+[; ;./stepper.h: 185:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1609 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1608 ]
-"181
-[; ;./stepper.h: 181:     do { LATBbits.LATB0 = 1; } while(0);
+"186
+[; ;./stepper.h: 186:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"191
+[; ;./stepper.h: 191:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 1612 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1611 ]
-"182
-[; ;./stepper.h: 182:     do { LATBbits.LATB2 = 0; } while(0);
+"192
+[; ;./stepper.h: 192:     do { LATBbits.LATB2 = 0; } while(0);
 [e :U 1615 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1614 ]
-"184
-[; ;./stepper.h: 184:     do { LATBbits.LATB3 = 0; } while(0);
+"193
+[; ;./stepper.h: 193:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"195
+[; ;./stepper.h: 195:     do { LATBbits.LATB3 = 0; } while(0);
 [e :U 1618 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 1617 ]
-"185
-[; ;./stepper.h: 185:     do { LATBbits.LATB5 = 1; } while(0);
+"196
+[; ;./stepper.h: 196:     do { LATBbits.LATB5 = 1; } while(0);
 [e :U 1621 ]
 {
 [e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 1620 ]
-"189
-[; ;./stepper.h: 189:     do { LATBbits.LATB4 = 1; } while(0);
+"197
+[; ;./stepper.h: 197:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"200
+[; ;./stepper.h: 200:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1624 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1623 ]
-"190
-[; ;./stepper.h: 190:     do { LATBbits.LATB1 = 1; } while(0);
+"201
+[; ;./stepper.h: 201:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1627 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1626 ]
-"192
-[; ;./stepper.h: 192:     delay_ms(delay);
+"202
+[; ;./stepper.h: 202:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"203
+[; ;./stepper.h: 203:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"196
-[; ;./stepper.h: 196:     do { LATBbits.LATB4 = 0; } while(0);
+"206
+[; ;./stepper.h: 206:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1630 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1629 ]
-"197
-[; ;./stepper.h: 197:     do { LATBbits.LATB1 = 0; } while(0);
+"207
+[; ;./stepper.h: 207:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1633 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1632 ]
-"203
-[; ;./stepper.h: 203:     do { LATBbits.LATB0 = 0; } while(0);
+"208
+[; ;./stepper.h: 208:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"213
+[; ;./stepper.h: 213:     do { LATBbits.LATB0 = 0; } while(0);
 [e :U 1636 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 1635 ]
-"204
-[; ;./stepper.h: 204:     do { LATBbits.LATB2 = 1; } while(0);
+"214
+[; ;./stepper.h: 214:     do { LATBbits.LATB2 = 1; } while(0);
 [e :U 1639 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1638 ]
-"206
-[; ;./stepper.h: 206:     do { LATBbits.LATB3 = 0; } while(0);
+"215
+[; ;./stepper.h: 215:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"217
+[; ;./stepper.h: 217:     do { LATBbits.LATB3 = 0; } while(0);
 [e :U 1642 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 1641 ]
-"207
-[; ;./stepper.h: 207:     do { LATBbits.LATB5 = 1; } while(0);
+"218
+[; ;./stepper.h: 218:     do { LATBbits.LATB5 = 1; } while(0);
 [e :U 1645 ]
 {
 [e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 1644 ]
-"211
-[; ;./stepper.h: 211:     do { LATBbits.LATB4 = 1; } while(0);
+"219
+[; ;./stepper.h: 219:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"222
+[; ;./stepper.h: 222:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1648 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1647 ]
-"212
-[; ;./stepper.h: 212:     do { LATBbits.LATB1 = 1; } while(0);
+"223
+[; ;./stepper.h: 223:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1651 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1650 ]
-"214
-[; ;./stepper.h: 214:     delay_ms(delay);
+"224
+[; ;./stepper.h: 224:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"225
+[; ;./stepper.h: 225:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"218
-[; ;./stepper.h: 218:     do { LATBbits.LATB4 = 0; } while(0);
+"228
+[; ;./stepper.h: 228:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1654 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1653 ]
-"219
-[; ;./stepper.h: 219:     do { LATBbits.LATB1 = 0; } while(0);
+"229
+[; ;./stepper.h: 229:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1657 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1656 ]
-"225
-[; ;./stepper.h: 225:     do { LATBbits.LATB0 = 0; } while(0);
+"230
+[; ;./stepper.h: 230:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"235
+[; ;./stepper.h: 235:     do { LATBbits.LATB0 = 0; } while(0);
 [e :U 1660 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 1659 ]
-"226
-[; ;./stepper.h: 226:     do { LATBbits.LATB2 = 1; } while(0);
+"236
+[; ;./stepper.h: 236:     do { LATBbits.LATB2 = 1; } while(0);
 [e :U 1663 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1662 ]
-"228
-[; ;./stepper.h: 228:     do { LATBbits.LATB3 = 1; } while(0);
+"237
+[; ;./stepper.h: 237:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"239
+[; ;./stepper.h: 239:     do { LATBbits.LATB3 = 1; } while(0);
 [e :U 1666 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1665 ]
-"229
-[; ;./stepper.h: 229:     do { LATBbits.LATB5 = 0; } while(0);
+"240
+[; ;./stepper.h: 240:     do { LATBbits.LATB5 = 0; } while(0);
 [e :U 1669 ]
 {
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 1668 ]
-"233
-[; ;./stepper.h: 233:     do { LATBbits.LATB4 = 1; } while(0);
+"241
+[; ;./stepper.h: 241:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"244
+[; ;./stepper.h: 244:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1672 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1671 ]
-"234
-[; ;./stepper.h: 234:     do { LATBbits.LATB1 = 1; } while(0);
+"245
+[; ;./stepper.h: 245:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1675 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1674 ]
-"236
-[; ;./stepper.h: 236:     delay_ms(delay);
+"246
+[; ;./stepper.h: 246:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"247
+[; ;./stepper.h: 247:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"240
-[; ;./stepper.h: 240:     do { LATBbits.LATB4 = 0; } while(0);
+"250
+[; ;./stepper.h: 250:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1678 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1677 ]
-"241
-[; ;./stepper.h: 241:     do { LATBbits.LATB1 = 0; } while(0);
+"251
+[; ;./stepper.h: 251:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1681 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1680 ]
-"247
-[; ;./stepper.h: 247:     do { LATBbits.LATB0 = 1; } while(0);
+"252
+[; ;./stepper.h: 252:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"257
+[; ;./stepper.h: 257:     do { LATBbits.LATB0 = 1; } while(0);
 [e :U 1684 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1683 ]
-"248
-[; ;./stepper.h: 248:     do { LATBbits.LATB2 = 0; } while(0);
+"258
+[; ;./stepper.h: 258:     do { LATBbits.LATB2 = 0; } while(0);
 [e :U 1687 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1686 ]
-"250
-[; ;./stepper.h: 250:     do { LATBbits.LATB3 = 1; } while(0);
+"259
+[; ;./stepper.h: 259:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"261
+[; ;./stepper.h: 261:     do { LATBbits.LATB3 = 1; } while(0);
 [e :U 1690 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1689 ]
-"251
-[; ;./stepper.h: 251:     do { LATBbits.LATB5 = 0; } while(0);
+"262
+[; ;./stepper.h: 262:     do { LATBbits.LATB5 = 0; } while(0);
 [e :U 1693 ]
 {
 [e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 1692 ]
-"255
-[; ;./stepper.h: 255:     do { LATBbits.LATB4 = 1; } while(0);
+"263
+[; ;./stepper.h: 263:     _delay((unsigned long)((10)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"266
+[; ;./stepper.h: 266:     do { LATBbits.LATB4 = 1; } while(0);
 [e :U 1696 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1695 ]
-"256
-[; ;./stepper.h: 256:     do { LATBbits.LATB1 = 1; } while(0);
+"267
+[; ;./stepper.h: 267:     do { LATBbits.LATB1 = 1; } while(0);
 [e :U 1699 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1698 ]
-"258
-[; ;./stepper.h: 258:     delay_ms(delay);
+"268
+[; ;./stepper.h: 268:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"269
+[; ;./stepper.h: 269:     delay_ms(delay);
 [e ( _delay_ms (1 _delay ]
-"261
-[; ;./stepper.h: 261:     }
+"272
+[; ;./stepper.h: 272:     }
 }
 [e ++ _i -> 1 `i ]
 [e :U 1585 ]
 [e $ < _i _step 1582  ]
 [e :U 1583 ]
 }
-"263
-[; ;./stepper.h: 263:     do { LATBbits.LATB4 = 0; } while(0);
+"274
+[; ;./stepper.h: 274:     do { LATBbits.LATB4 = 0; } while(0);
 [e :U 1702 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1701 ]
-"264
-[; ;./stepper.h: 264:     do { LATBbits.LATB1 = 0; } while(0);
+"275
+[; ;./stepper.h: 275:     do { LATBbits.LATB1 = 0; } while(0);
 [e :U 1705 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1704 ]
-"266
-[; ;./stepper.h: 266: }
+"276
+[; ;./stepper.h: 276:     _delay((unsigned long)((30)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"277
+[; ;./stepper.h: 277: }
 [e :UE 1575 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
@@ -2259,8 +2385,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 72:             VoltageActual = (Resolution * Voltage);
 [e = _VoltageActual * _Resolution _Voltage ]
 "74
-[; ;main.c: 74:             if (VoltageActual>70)
-[e $ ! > _VoltageActual -> -> 70 `i `f 1745  ]
+[; ;main.c: 74:             if (VoltageActual > 100)
+[e $ ! > _VoltageActual -> -> 100 `i `f 1745  ]
 "75
 [; ;main.c: 75:             {
 {
