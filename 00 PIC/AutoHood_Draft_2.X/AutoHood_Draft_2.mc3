@@ -3776,7 +3776,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="anselUserSetRA6"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="anselUserSetRA7"/>
@@ -3840,7 +3840,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="anselUserSetRC6"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="anselUserSetRC7"/>
@@ -6212,7 +6212,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELA"/>
-         <value>65</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELB"/>
@@ -6592,7 +6592,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSELA6"/>
-         <value>analog</value>
+         <value>digital</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSELA7"/>
@@ -8439,22 +8439,38 @@
          <value>WDT window violation reset has not occurred</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>2e65214323a04575a8d2ce8a9046d8b5c3545b9d17b2d1db18b425cdf9925d25</hash>
+         <file>main.c</file>
+         <hash>288b3a299baf3c626c724b0796b202ed538ecda3e3047430f92ba6fcf10c7c6c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adcc.c</file>
+         <hash>d6067d1a9d134538079ced6a6887f8d8800d1c45f571fb460bcff32b700cb0ed</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adcc.h</file>
+         <hash>b45f4e5813503df96bdb873abb306db8b07cafe4c2102fe06d83997e172d017e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>c548b732cafaf81601ee38c4e1d5ae984c00fef02e67e7696f9bc47709bccccf</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>ee116ed06fd32e7268557c32fc284722a07420fe4b47dbcbdbf337ba963355e8</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\eusart2.c</file>
-         <hash>edd0ffd935e23e3ce12e11285607fa64d3537de4f08d9b5cccd2c3f6341e1f38</hash>
+         <file>mcc_generated_files\eusart1.c</file>
+         <hash>e4f0a96afeb0d6faab0a2804c195becec035c0fb835f4a4228344b38ff450968</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\eusart1.h</file>
          <hash>82b08a9d123376d97c1d6577ae3b0371742e503bb64d293b437a46efeb96ca27</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\eusart2.c</file>
+         <hash>edd0ffd935e23e3ce12e11285607fa64d3537de4f08d9b5cccd2c3f6341e1f38</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\eusart2.h</file>
@@ -8465,48 +8481,32 @@
          <hash>7e6c91cd06b4dfa105e36ec513d830d3335728f87a7009a910d3c1ad4df1c51b</hash>
       </entry>
       <entry>
-         <file>main.c</file>
-         <hash>288b3a299baf3c626c724b0796b202ed538ecda3e3047430f92ba6fcf10c7c6c</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>c548b732cafaf81601ee38c4e1d5ae984c00fef02e67e7696f9bc47709bccccf</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>9d152d56246b26082905a77e70ff6d24885423263f4af77fb12e4de56bae27e9</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adcc.h</file>
-         <hash>b45f4e5813503df96bdb873abb306db8b07cafe4c2102fe06d83997e172d017e</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>f6746690a11597a5d0275f2f5be63b8b1a1977387fd34d2819f0b0d228f49676</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adcc.c</file>
-         <hash>d6067d1a9d134538079ced6a6887f8d8800d1c45f571fb460bcff32b700cb0ed</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\i2c1_master.h</file>
-         <hash>9b945a88dd76e93fd714efd4bd857e0b44556e9d4a6f8b07d1877799c17b006d</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\examples\i2c1_master_example.h</file>
          <hash>ffe9b2ebdc646721d34a2f70a7be0a1c7958b2111339e3b94a1cb3c4b611be17</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>c6714811bc6265721787c87df7b6dce942c5cd903d2c23039955a0de8989553a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\i2c1_master.c</file>
          <hash>bfd031352e76d9424d2511a08c289c5978ec1a501d785e4fa76bdfcf15ab9c4b</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\eusart1.c</file>
-         <hash>e4f0a96afeb0d6faab0a2804c195becec035c0fb835f4a4228344b38ff450968</hash>
+         <file>mcc_generated_files\i2c1_master.h</file>
+         <hash>9b945a88dd76e93fd714efd4bd857e0b44556e9d4a6f8b07d1877799c17b006d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>c6714811bc6265721787c87df7b6dce942c5cd903d2c23039955a0de8989553a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>2e65214323a04575a8d2ce8a9046d8b5c3545b9d17b2d1db18b425cdf9925d25</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>f6746690a11597a5d0275f2f5be63b8b1a1977387fd34d2819f0b0d228f49676</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>9d152d56246b26082905a77e70ff6d24885423263f4af77fb12e4de56bae27e9</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

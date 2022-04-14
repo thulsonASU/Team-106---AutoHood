@@ -15901,9 +15901,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 414 "mcc_generated_files/pin_manager.h"
+# 386 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 426 "mcc_generated_files/pin_manager.h"
+# 398 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -16307,39 +16307,6 @@ _Bool ADCC_HasErrorCrossedLowerThreshold(void);
 uint8_t ADCC_GetConversionStageStatus(void);
 # 56 "mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/eusart2.h" 1
-# 75 "mcc_generated_files/eusart2.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart2_status_t;
-# 110 "mcc_generated_files/eusart2.h"
-void EUSART2_Initialize(void);
-# 158 "mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_tx_ready(void);
-# 206 "mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_rx_ready(void);
-# 253 "mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_tx_done(void);
-# 301 "mcc_generated_files/eusart2.h"
-eusart2_status_t EUSART2_get_last_status(void);
-# 321 "mcc_generated_files/eusart2.h"
-uint8_t EUSART2_Read(void);
-# 341 "mcc_generated_files/eusart2.h"
-void EUSART2_Write(uint8_t txData);
-# 361 "mcc_generated_files/eusart2.h"
-void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 379 "mcc_generated_files/eusart2.h"
-void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 397 "mcc_generated_files/eusart2.h"
-void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "mcc_generated_files/mcc.h" 2
-
 # 1 "mcc_generated_files/eusart1.h" 1
 # 75 "mcc_generated_files/eusart1.h"
 typedef union {
@@ -16371,12 +16338,12 @@ void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 58 "mcc_generated_files/mcc.h" 2
-# 73 "mcc_generated_files/mcc.h"
+# 57 "mcc_generated_files/mcc.h" 2
+# 72 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "mcc_generated_files/mcc.h"
+# 85 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "mcc_generated_files/mcc.h"
+# 98 "mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
@@ -16390,19 +16357,18 @@ void SYSTEM_Initialize(void)
     OSCILLATOR_Initialize();
     ADCC_Initialize();
     EUSART1_Initialize();
-    EUSART2_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
 {
 
-    OSCCON1 = 0x70;
+    OSCCON1 = 0x60;
 
     OSCCON3 = 0x00;
 
     OSCEN = 0x00;
 
-    OSCFRQ = 0x02;
+    OSCFRQ = 0x08;
 
     OSCTUNE = 0x00;
 }

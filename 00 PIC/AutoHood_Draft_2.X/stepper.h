@@ -22,7 +22,8 @@ void motorCCW(int delay, int step) // --------------------------------------- //
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
+    
     //Start Stepper Loop
     for(int i = 0; i < step; i++)
     {
@@ -31,103 +32,110 @@ void motorCCW(int delay, int step) // --------------------------------------- //
     // STEP ONE ----------------------------------------------------------------
     // B R+/G-
     Input2B_SetHigh(); // Red
-    Input1B_SetLow(); // Gray
+    Input1B_SetLow(); // Gray 
+    __delay_ms(10);
+     
     // A Y+/B-
     Input2A_SetHigh(); // Yellow
     Input1A_SetLow(); // Black
-    
+     __delay_ms(10);
+     
     // START STEP ONE
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);
-    
     
     // Stop
     EnableA_SetLow();
-    EnableB_SetLow();    
-
+    EnableB_SetLow();
+    __delay_ms(30);
     
     //Write GPIO Data
     // STEP TWO ----------------------------------------------------------------
     // B R-/G+
     Input2B_SetLow(); // Red
     Input1B_SetHigh(); // Gray
+    __delay_ms(10);
+    
     // A Y+/B-
     Input2A_SetHigh(); // Yellow
     Input1A_SetLow(); // Black
-
+    __delay_ms(10);
     
     // START STEP TWO
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);
-    
     
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
     
     //Write GPIO Data
     // STEP THREE --------------------------------------------------------------
     // B R-/G+
     Input2B_SetLow(); // Red
     Input1B_SetHigh(); // Gray
+    __delay_ms(10);
     // A Y-/B+
     Input2A_SetLow(); // Yellow
     Input1A_SetHigh(); // Black
-
+    __delay_ms(10);
     
     // START STEP THREE
     EnableA_SetHigh();
     EnableB_SetHigh();
     
+    __delay_ms(30);
     delay_ms(delay);
-    
     
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
     
     //Write GPIO Data
     // STEP FOUR ---------------------------------------------------------------
     // B R+/G-
     Input2B_SetHigh(); // Red
     Input1B_SetLow(); // Gray
+    __delay_ms(10);
     // A Y-/B+
     Input2A_SetLow(); // Yellow
     Input1A_SetHigh(); // Black
-    
+    __delay_ms(10);
     
     // START STEP FOUR
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);    
     
 
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
 
     //Write GPIO Data
     // STEP FIVE ---------------------------------------------------------------
     // B R+/G-
     Input2B_SetHigh(); // Red
     Input1B_SetLow(); // Gray
+    __delay_ms(10);
     // A Y+/B-
     Input2A_SetHigh(); // Yellow
     Input1A_SetLow(); // Black
-    
+    __delay_ms(10);
     
     // START STEP FIVE
     EnableA_SetHigh();
     EnableB_SetHigh();
     
+    __delay_ms(30);
     delay_ms(delay);
     
     //End Stepper Loop
@@ -136,7 +144,8 @@ void motorCCW(int delay, int step) // --------------------------------------- //
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
+    
 }
 void motorCW(int delay, int step) // ---------------------------------------- //
 {
@@ -149,6 +158,7 @@ void motorCW(int delay, int step) // ---------------------------------------- //
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
+    __delay_ms(30);
     
     //Start Stepper Loop
     for( int i = 0; i < step; i++)
@@ -159,102 +169,103 @@ void motorCW(int delay, int step) // ---------------------------------------- //
     // B R+/G-
     Input2B_SetHigh(); // Red
     Input1B_SetLow(); // Gray
+    __delay_ms(10);
     // A Y+/B-
     Input2A_SetHigh(); // Yellow
     Input1A_SetLow(); // Black
-    
+    __delay_ms(10);
     // START STEP ONE
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);
-    
     
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
     
     //Write GPIO Data
     // STEP TWO ----------------------------------------------------------------
     // B R+/G-
     Input2B_SetHigh(); // Red
     Input1B_SetLow(); // Gray
+    __delay_ms(10);
     // A Y-/B+
     Input2A_SetLow(); // Yellow
     Input1A_SetHigh(); // Black
-
+    __delay_ms(10);
     
     // START STEP TWO
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);
-    
     
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
     
     //Write GPIO Data
     // STEP THREE --------------------------------------------------------------
     // B R-/G+
     Input2B_SetLow(); // Red
     Input1B_SetHigh(); // Gray
+    __delay_ms(10);
     // A Y-/B+
     Input2A_SetLow(); // Yellow
     Input1A_SetHigh(); // Black
-
+    __delay_ms(10);
     
     // START STEP THREE
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);
-    
     
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
     
     //Write GPIO Data
     // STEP FOUR ---------------------------------------------------------------
     // B R-/G+
     Input2B_SetLow(); // Red
     Input1B_SetHigh(); // Gray
+    __delay_ms(10);
     // A Y+/B-
     Input2A_SetHigh(); // Yellow
     Input1A_SetLow(); // Black
-    
+    __delay_ms(10);
     
     // START STEP FOUR
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);    
     
-
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
 
     //Write GPIO Data
     // STEP FIVE ---------------------------------------------------------------
     // B R+/G-
     Input2B_SetHigh(); // Red
     Input1B_SetLow(); // Gray
+    __delay_ms(10);
     // A Y+/B-
     Input2A_SetHigh(); // Yellow
     Input1A_SetLow(); // Black
-    
+    __delay_ms(10);
     
     // START STEP FIVE
     EnableA_SetHigh();
     EnableB_SetHigh();
-    
+    __delay_ms(30);
     delay_ms(delay);
 
     //End Stepper Loop
@@ -262,5 +273,5 @@ void motorCW(int delay, int step) // ---------------------------------------- //
     // Stop
     EnableA_SetLow();
     EnableB_SetLow();    
-
+    __delay_ms(30);
 }
