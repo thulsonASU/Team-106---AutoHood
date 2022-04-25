@@ -204,3 +204,9 @@ void hoodStepperDemo() {
         motorCCW(50,8);
         
 }
+void hood_ESTOP() {
+    EnableA_SetLow();
+    __delay_ms(1); 
+    EnableB_SetLow();
+    __delay_ms(1); 
+}

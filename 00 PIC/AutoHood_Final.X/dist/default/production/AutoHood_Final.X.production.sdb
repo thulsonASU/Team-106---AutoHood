@@ -66,7 +66,7 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"16 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/anemometer.h
+"17 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/anemometer.h
 [e E9974 . `uc
 ANA 0
 channel_VSS 60
@@ -88,20 +88,22 @@ I2C1_NOERR 0
 I2C1_BUSY 1
 I2C1_FAIL 2
 ]
-"9 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/esp32.h
+"11 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/anemometer.h
+[v _ADCGetVal ADCGetVal `(v  1 e 1 0 ]
+"15 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/esp32.h
 [v _EUSART1ISR EUSART1ISR `(v  1 e 1 0 ]
-"21
+"55
 [v _txWindSpeed txWindSpeed `(v  1 e 1 0 ]
 "5 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/stepper.h
 [v _delay_ms delay_ms `(v  1 e 1 0 ]
 "13
 [v _motorCW motorCW `(v  1 e 1 0 ]
-"113
+"104
 [v _motorCCW motorCCW `(v  1 e 1 0 ]
 "8 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/temphumidity.h
-[v _wr1RegCompleteHandler@temphumidity$F1997 wr1RegCompleteHandler `(E9900  1 s 1 wr1RegCompleteHandler ]
+[v _wr1RegCompleteHandler@temphumidity$F1999 wr1RegCompleteHandler `(E9900  1 s 1 wr1RegCompleteHandler ]
 "14
-[v _rd1RegCompleteHandler@temphumidity$F1999 rd1RegCompleteHandler `(E9900  1 s 1 rd1RegCompleteHandler ]
+[v _rd1RegCompleteHandler@temphumidity$F2001 rd1RegCompleteHandler `(E9900  1 s 1 rd1RegCompleteHandler ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
@@ -155,6 +157,7 @@ I2C1_FAIL 2
 [v i2___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
+[v i2___flsub __flsub `(d  1 e 4 0 ]
 "11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
@@ -176,7 +179,8 @@ I2C1_FAIL 2
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"31 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\main.c
+[v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
+"36 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
@@ -188,6 +192,7 @@ I2C1_FAIL 2
 [v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
 "137
 [v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+[v i2_EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
 "142
 [v _EUSART1_is_tx_done EUSART1_is_tx_done `(a  1 e 1 0 ]
 "151
@@ -344,6 +349,16 @@ I2C1_FAIL 2
 [v _rxData rxData `uc  1 e 1 0 ]
 "7
 [v _rxDataf rxDataf `f  1 e 4 0 ]
+"8
+[v _boundingCondition boundingCondition `f  1 e 4 0 ]
+"9
+[v _rxDatafLower rxDatafLower `f  1 e 4 0 ]
+"10
+[v _rxDatafUpper rxDatafUpper `f  1 e 4 0 ]
+"12
+[v _rx_f rx_f `i  1 e 2 0 ]
+"13
+[v _tx_f tx_f `i  1 e 2 0 ]
 "213 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/mcc_generated_files/i2c1_master.h
 [v _MSSP1_InterruptHandler MSSP1_InterruptHandler `*.37(v  1 e 2 0 ]
 "3599 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k40.h
@@ -942,6 +957,10 @@ I2C1_FAIL 2
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
+"32 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\main.c
+[v _hoodDeploy_f hoodDeploy_f `i  1 e 2 0 ]
+"33
+[v _hoodDeployed_f hoodDeployed_f `i  1 e 2 0 ]
 "62 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/eusart1.c
 [v _eusart1TxHead eusart1TxHead `VEuc  1 e 1 0 ]
 "63
@@ -987,22 +1006,22 @@ I2C1_FAIL 2
 ]
 "165
 [v _I2C1_Status I2C1_Status `S530  1 e 36 0 ]
-"31 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\main.c
+"36 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"113
+"132
 } 0
-"21 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/esp32.h
+"55 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/esp32.h
 [v _txWindSpeed txWindSpeed `(v  1 e 1 0 ]
 {
 [v txWindSpeed@speed speed `f  1 p 4 20 ]
-"29
+"66
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.39v  1 a 2 115 ]
+[v printf@ap ap `[1]*.39v  1 a 2 119 ]
 "5
 [v printf@fmt fmt `*.32Cuc  1 p 2 14 ]
 "13
@@ -1011,12 +1030,12 @@ I2C1_FAIL 2
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
-[v vfprintf@cfmt cfmt `*.32uc  1 a 2 113 ]
-[s S2487 _IO_FILE 0 ]
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 117 ]
+[s S2496 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.2S2487  1 p 2 107 ]
-[v vfprintf@fmt fmt `*.32Cuc  1 p 2 109 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 111 ]
+[v vfprintf@fp fp `*.2S2496  1 p 2 111 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 113 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 115 ]
 "1404
 } 0
 "692
@@ -1027,121 +1046,121 @@ I2C1_FAIL 2
 "694
 [v vfpfcnvrt@ct ct `[3]uc  1 a 3 10 ]
 [v vfpfcnvrt@c c `uc  1 a 1 13 ]
-[s S2487 _IO_FILE 0 ]
+[s S2496 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.2S2487  1 p 2 97 ]
-[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 99 ]
-[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 101 ]
+[v vfpfcnvrt@fp fp `*.2S2496  1 p 2 101 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 103 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 105 ]
 "1387
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
 [v _strncmp strncmp `(i  1 e 2 0 ]
 {
 "5
-[v strncmp@r r `*.32Cuc  1 a 2 35 ]
-[v strncmp@l l `*.39Cuc  1 a 2 33 ]
+[v strncmp@r r `*.32Cuc  1 a 2 36 ]
+[v strncmp@l l `*.39Cuc  1 a 2 34 ]
 "3
-[v strncmp@_l _l `*.39Cuc  1 p 2 26 ]
-[v strncmp@_r _r `*.32Cuc  1 p 2 28 ]
-[v strncmp@n n `ui  1 p 2 30 ]
+[v strncmp@_l _l `*.39Cuc  1 p 2 27 ]
+[v strncmp@_r _r `*.32Cuc  1 p 2 29 ]
+[v strncmp@n n `ui  1 p 2 31 ]
 "9
 } 0
 "332 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
 {
 "336
-[v efgtoa@u u `d  1 a 4 93 ]
-[v efgtoa@g g `d  1 a 4 85 ]
-[v efgtoa@l l `d  1 a 4 79 ]
-[v efgtoa@h h `d  1 a 4 75 ]
-[v efgtoa@ou ou `d  1 a 4 61 ]
+[v efgtoa@u u `d  1 a 4 97 ]
+[v efgtoa@g g `d  1 a 4 89 ]
+[v efgtoa@l l `d  1 a 4 83 ]
+[v efgtoa@h h `d  1 a 4 79 ]
+[v efgtoa@ou ou `d  1 a 4 65 ]
 "335
-[v efgtoa@n n `i  1 a 2 91 ]
-[v efgtoa@e e `i  1 a 2 89 ]
-[v efgtoa@i i `i  1 a 2 83 ]
-[v efgtoa@w w `i  1 a 2 71 ]
-[v efgtoa@p p `i  1 a 2 69 ]
-[v efgtoa@sign sign `i  1 a 2 67 ]
-[v efgtoa@d d `i  1 a 2 65 ]
-[v efgtoa@m m `i  1 a 2 59 ]
-[v efgtoa@ne ne `i  1 a 2 57 ]
-[v efgtoa@pp pp `i  1 a 2 55 ]
-[v efgtoa@t t `i  1 a 2 53 ]
+[v efgtoa@n n `i  1 a 2 95 ]
+[v efgtoa@e e `i  1 a 2 93 ]
+[v efgtoa@i i `i  1 a 2 87 ]
+[v efgtoa@w w `i  1 a 2 75 ]
+[v efgtoa@p p `i  1 a 2 73 ]
+[v efgtoa@sign sign `i  1 a 2 71 ]
+[v efgtoa@d d `i  1 a 2 69 ]
+[v efgtoa@m m `i  1 a 2 63 ]
+[v efgtoa@ne ne `i  1 a 2 61 ]
+[v efgtoa@pp pp `i  1 a 2 59 ]
+[v efgtoa@t t `i  1 a 2 57 ]
 "334
-[v efgtoa@mode mode `uc  1 a 1 74 ]
-[v efgtoa@nmode nmode `uc  1 a 1 73 ]
-[s S2487 _IO_FILE 0 ]
+[v efgtoa@mode mode `uc  1 a 1 78 ]
+[v efgtoa@nmode nmode `uc  1 a 1 77 ]
+[s S2496 _IO_FILE 0 ]
 "332
-[v efgtoa@fp fp `*.2S2487  1 p 2 29 ]
-[v efgtoa@f f `d  1 p 4 31 ]
-[v efgtoa@c c `uc  1 p 1 35 ]
+[v efgtoa@fp fp `*.2S2496  1 p 2 33 ]
+[v efgtoa@f f `d  1 p 4 35 ]
+[v efgtoa@c c `uc  1 p 1 39 ]
 "525
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
 [v _tolower tolower `(i  1 e 2 0 ]
 {
-[v tolower@c c `i  1 p 2 32 ]
+[v tolower@c c `i  1 p 2 33 ]
 "8
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
 [v _isupper isupper `(i  1 e 2 0 ]
 {
-[v isupper@c c `i  1 p 2 26 ]
+[v isupper@c c `i  1 p 2 27 ]
 "8
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
 {
 "6
-[v strcpy@d d `*.39uc  1 a 2 34 ]
+[v strcpy@d d `*.39uc  1 a 2 35 ]
 "5
-[v strcpy@s s `*.34Cuc  1 a 2 32 ]
+[v strcpy@s s `*.34Cuc  1 a 2 33 ]
 "3
-[v strcpy@dest dest `*.39uc  1 p 2 26 ]
-[v strcpy@src src `*.34Cuc  1 p 2 28 ]
+[v strcpy@dest dest `*.39uc  1 p 2 27 ]
+[v strcpy@src src `*.34Cuc  1 p 2 29 ]
 "9
 } 0
 "72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 {
 "74
-[v pad@w w `i  1 a 2 11 ]
-[v pad@i i `i  1 a 2 9 ]
-[s S2487 _IO_FILE 0 ]
+[v pad@w w `i  1 a 2 15 ]
+[v pad@i i `i  1 a 2 13 ]
+[s S2496 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.2S2487  1 p 2 3 ]
-[v pad@buf buf `*.39uc  1 p 2 5 ]
-[v pad@p p `i  1 p 2 7 ]
+[v pad@fp fp `*.2S2496  1 p 2 7 ]
+[v pad@buf buf `*.39uc  1 p 2 9 ]
+[v pad@p p `i  1 p 2 11 ]
 "95
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
 "7
-[v strlen@a a `*.39Cuc  1 a 2 28 ]
+[v strlen@a a `*.39Cuc  1 a 2 29 ]
 "5
-[v strlen@s s `*.39Cuc  1 p 2 26 ]
+[v strlen@s s `*.39Cuc  1 p 2 27 ]
 "12
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
 {
 "11
-[v fputs@i i `i  1 a 2 1 ]
+[v fputs@i i `i  1 a 2 5 ]
 "10
-[v fputs@c c `uc  1 a 1 0 ]
+[v fputs@c c `uc  1 a 1 4 ]
 "8
-[v fputs@s s `*.39Cuc  1 p 2 37 ]
-[s S2471 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.2S2471  1 p 2 39 ]
+[v fputs@s s `*.39Cuc  1 p 2 0 ]
+[s S2480 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.2S2480  1 p 2 2 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
-[v fputc@c c `i  1 p 2 28 ]
-[s S2471 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.2S2471  1 p 2 30 ]
+[v fputc@c c `i  1 p 2 29 ]
+[s S2480 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.2S2480  1 p 2 31 ]
 "24
 } 0
 "201 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/eusart1.c
@@ -1150,7 +1169,7 @@ I2C1_FAIL 2
 [v putch@txData txData `uc  1 a 1 wreg ]
 [v putch@txData txData `uc  1 a 1 wreg ]
 "203
-[v putch@txData txData `uc  1 a 1 27 ]
+[v putch@txData txData `uc  1 a 1 28 ]
 "204
 } 0
 "173
@@ -1158,47 +1177,47 @@ I2C1_FAIL 2
 {
 [v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
 [v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
-[v EUSART1_Write@txData txData `uc  1 a 1 26 ]
+[v EUSART1_Write@txData txData `uc  1 a 1 27 ]
 "194
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S2629 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S2638 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S2629  1 a 4 25 ]
+[v floorf@u u `S2638  1 a 4 29 ]
 "7
-[v floorf@m m `ul  1 a 4 19 ]
+[v floorf@m m `ul  1 a 4 23 ]
 "6
-[v floorf@e e `i  1 a 2 23 ]
+[v floorf@e e `i  1 a 2 27 ]
 "3
-[v floorf@x x `f  1 p 4 38 ]
+[v floorf@x x `f  1 p 4 13 ]
 "4
-[v floorf@F527 F527 `S2629  1 s 4 F527 ]
+[v floorf@F527 F527 `S2638  1 s 4 F527 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S2629 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S2638 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S2629  1 a 4 36 ]
+[v ___fpclassifyf@u u `S2638  1 a 4 2 ]
 "7
-[v ___fpclassifyf@e e `i  1 a 2 34 ]
+[v ___fpclassifyf@e e `i  1 a 2 0 ]
 "4
-[v ___fpclassifyf@x x `f  1 p 4 26 ]
+[v ___fpclassifyf@x x `f  1 p 4 27 ]
 "5
-[v ___fpclassifyf@F465 F465 `S2629  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S2638  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 35 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 34 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 36 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 35 ]
 "43
-[v ___fltol@f1 f1 `d  1 p 4 26 ]
+[v ___fltol@f1 f1 `d  1 p 4 27 ]
 "70
 } 0
 "245 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
@@ -1208,52 +1227,11 @@ I2C1_FAIL 2
 [v ___flsub@a a `d  1 p 4 17 ]
 "250
 } 0
-"10
-[v ___fladd __fladd `(d  1 e 4 0 ]
-{
-"17
-[v ___fladd@grs grs `uc  1 a 1 41 ]
-"15
-[v ___fladd@bexp bexp `uc  1 a 1 40 ]
-"16
-[v ___fladd@aexp aexp `uc  1 a 1 39 ]
-"13
-[v ___fladd@signs signs `uc  1 a 1 38 ]
-"10
-[v ___fladd@b b `d  1 p 4 26 ]
-[v ___fladd@a a `d  1 p 4 30 ]
-"237
-} 0
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
 {
-[v ___flneg@f1 f1 `d  1 p 4 26 ]
+[v ___flneg@f1 f1 `d  1 p 4 27 ]
 "20
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S2332 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S2337 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2340 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2332 1 fAsBytes 4 0 `S2337 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2340  1 a 4 7 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 2 ]
-[s S2408 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S2411 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2408 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2411  1 a 2 11 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 6 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 1 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 0 ]
-"8
-[v ___flmul@b b `d  1 p 4 26 ]
-[v ___flmul@a a `d  1 p 4 30 ]
-"205
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
@@ -1265,8 +1243,8 @@ I2C1_FAIL 2
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 {
-[v ___fleq@ff1 ff1 `d  1 p 4 26 ]
-[v ___fleq@ff2 ff2 `d  1 p 4 30 ]
+[v ___fleq@ff1 ff1 `d  1 p 4 27 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 31 ]
 "12
 } 0
 "11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
@@ -1285,32 +1263,32 @@ I2C1_FAIL 2
 "16
 [v ___fldiv@sign sign `uc  1 a 1 4 ]
 "11
-[v ___fldiv@b b `d  1 p 4 26 ]
-[v ___fldiv@a a `d  1 p 4 30 ]
+[v ___fldiv@b b `d  1 p 4 27 ]
+[v ___fldiv@a a `d  1 p 4 31 ]
 "185
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "10
-[v ___awmod@sign sign `uc  1 a 1 31 ]
-[v ___awmod@counter counter `uc  1 a 1 30 ]
+[v ___awmod@sign sign `uc  1 a 1 32 ]
+[v ___awmod@counter counter `uc  1 a 1 31 ]
 "7
-[v ___awmod@dividend dividend `i  1 p 2 26 ]
-[v ___awmod@divisor divisor `i  1 p 2 28 ]
+[v ___awmod@dividend dividend `i  1 p 2 27 ]
+[v ___awmod@divisor divisor `i  1 p 2 29 ]
 "34
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "10
-[v ___awdiv@quotient quotient `i  1 a 2 32 ]
+[v ___awdiv@quotient quotient `i  1 a 2 33 ]
 "11
-[v ___awdiv@sign sign `uc  1 a 1 31 ]
-[v ___awdiv@counter counter `uc  1 a 1 30 ]
+[v ___awdiv@sign sign `uc  1 a 1 32 ]
+[v ___awdiv@counter counter `uc  1 a 1 31 ]
 "7
-[v ___awdiv@dividend dividend `i  1 p 2 26 ]
-[v ___awdiv@divisor divisor `i  1 p 2 28 ]
+[v ___awdiv@dividend dividend `i  1 p 2 27 ]
+[v ___awdiv@divisor divisor `i  1 p 2 29 ]
 "41
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
@@ -1320,29 +1298,29 @@ I2C1_FAIL 2
 [v atoi@n n `i  1 a 2 7 ]
 [v atoi@neg neg `i  1 a 2 0 ]
 "4
-[v atoi@s s `*.32Cuc  1 p 2 33 ]
+[v atoi@s s `*.32Cuc  1 p 2 34 ]
 "16
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
 [v _isspace isspace `(i  1 e 2 0 ]
 {
-[v isspace@c c `i  1 p 2 26 ]
+[v isspace@c c `i  1 p 2 27 ]
 "8
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
 [v _isdigit isdigit `(i  1 e 2 0 ]
 {
-[v isdigit@c c `i  1 p 2 26 ]
+[v isdigit@c c `i  1 p 2 27 ]
 "8
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 30 ]
+[v ___wmul@product product `ui  1 a 2 31 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 26 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 28 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 27 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 29 ]
 "53
 } 0
 "132 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/eusart1.c
@@ -1393,37 +1371,114 @@ I2C1_FAIL 2
 "285
 [v _EUSART1_SetTxInterruptHandler EUSART1_SetTxInterruptHandler `(v  1 e 1 0 ]
 {
-[v EUSART1_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 26 ]
+[v EUSART1_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 27 ]
 "287
 } 0
 "289
 [v _EUSART1_SetRxInterruptHandler EUSART1_SetRxInterruptHandler `(v  1 e 1 0 ]
 {
-[v EUSART1_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 26 ]
+[v EUSART1_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 27 ]
 "291
 } 0
 "277
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v EUSART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 26 ]
+[v EUSART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 27 ]
 "279
 } 0
 "273
 [v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v EUSART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 26 ]
+[v EUSART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 27 ]
 "275
 } 0
 "281
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 26 ]
+[v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 27 ]
 "283
 } 0
 "62 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "105
+} 0
+"137 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/eusart1.c
+[v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+{
+"140
+} 0
+"11 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/anemometer.h
+[v _ADCGetVal ADCGetVal `(v  1 e 1 0 ]
+{
+"15
+[v ADCGetVal@convertedValue convertedValue `us  1 a 2 15 ]
+"22
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 2 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 1 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 27 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 0 ]
+"44
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2341 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2346 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2349 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2341 1 fAsBytes 4 0 `S2346 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2349  1 a 4 7 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 2 ]
+[s S2417 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2420 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2417 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2420  1 a 2 11 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 6 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 1 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 0 ]
+"8
+[v ___flmul@b b `d  1 p 4 27 ]
+[v ___flmul@a a `d  1 p 4 31 ]
+"205
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 3 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 2 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 1 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 0 ]
+"10
+[v ___fladd@b b `d  1 p 4 27 ]
+[v ___fladd@a a `d  1 p 4 31 ]
+"237
+} 0
+"131 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E9562  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E9562  1 a 1 wreg ]
+"134
+[v ADCC_GetSingleConversion@channel channel `E9562  1 a 1 31 ]
+"154
 } 0
 "58 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
@@ -1565,15 +1620,15 @@ I2C1_FAIL 2
 "587
 } 0
 "14 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/temphumidity.h
-[v _rd1RegCompleteHandler@temphumidity$F1999 rd1RegCompleteHandler `(E9900  1 s 1 rd1RegCompleteHandler ]
+[v _rd1RegCompleteHandler@temphumidity$F2001 rd1RegCompleteHandler `(E9900  1 s 1 rd1RegCompleteHandler ]
 {
-[v rd1RegCompleteHandler@temphumidity$F1999@ptr ptr `*.39v  1 p 2 9 ]
+[v rd1RegCompleteHandler@temphumidity$F2001@ptr ptr `*.39v  1 p 2 9 ]
 "19
 } 0
 "8
-[v _wr1RegCompleteHandler@temphumidity$F1997 wr1RegCompleteHandler `(E9900  1 s 1 wr1RegCompleteHandler ]
+[v _wr1RegCompleteHandler@temphumidity$F1999 wr1RegCompleteHandler `(E9900  1 s 1 wr1RegCompleteHandler ]
 {
-[v wr1RegCompleteHandler@temphumidity$F1997@ptr ptr `*.39v  1 p 2 9 ]
+[v wr1RegCompleteHandler@temphumidity$F1999@ptr ptr `*.39v  1 p 2 9 ]
 "13
 } 0
 "526 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/i2c1_master.c
@@ -1661,37 +1716,34 @@ I2C1_FAIL 2
 {
 "247
 } 0
-"9 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/esp32.h
+"15 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X/esp32.h
 [v _EUSART1ISR EUSART1ISR `(v  1 e 1 0 ]
 {
-"19
+"53
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
-[v i2___flmul __flmul `(d  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v i2___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
-[s S2332 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[v i2___xxtofl@sign sign `uc  1 a 1 wreg ]
 "13
-[s S2337 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2340 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2332 1 fAsBytes 4 0 `S2337 1 fAsWords 4 0 ]
-[v i2___flmul@prod prod `S2340  1 a 4 35 ]
+[v i2___xxtofl@arg arg `ul  1 a 4 10 ]
 "12
-[v i2___flmul@grs grs `ul  1 a 4 29 ]
-[s S2408 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S2411 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2408 1 nAsBytes 2 0 ]
-[v i2___flmul@temp temp `S2411  1 a 2 39 ]
+[v i2___xxtofl@exp exp `uc  1 a 1 9 ]
 "10
-[v i2___flmul@bexp bexp `uc  1 a 1 34 ]
-"11
-[v i2___flmul@aexp aexp `uc  1 a 1 33 ]
-"9
-[v i2___flmul@sign sign `uc  1 a 1 28 ]
-"8
-[v i2___flmul@b b `d  1 p 4 16 ]
-[v i2___flmul@a a `d  1 p 4 20 ]
-"205
+[v i2___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v i2___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v i2___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"245 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v i2___flsub __flsub `(d  1 e 4 0 ]
+{
+[v i2___flsub@b b `d  1 p 4 16 ]
+[v i2___flsub@a a `d  1 p 4 20 ]
+"250
+} 0
+"10
 [v i2___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
@@ -1707,23 +1759,33 @@ I2C1_FAIL 2
 [v i2___fladd@a a `d  1 p 4 4 ]
 "237
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v i2___flmul __flmul `(d  1 e 4 0 ]
 {
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[s S2341 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+[s S2346 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2349 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2341 1 fAsBytes 4 0 `S2346 1 fAsWords 4 0 ]
+[v i2___flmul@prod prod `S2349  1 a 4 19 ]
 "12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+[v i2___flmul@grs grs `ul  1 a 4 13 ]
+[s S2417 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2420 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2417 1 nAsBytes 2 0 ]
+[v i2___flmul@temp temp `S2420  1 a 2 23 ]
 "10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
+[v i2___flmul@bexp bexp `uc  1 a 1 18 ]
+"11
+[v i2___flmul@aexp aexp `uc  1 a 1 17 ]
+"9
+[v i2___flmul@sign sign `uc  1 a 1 12 ]
+"8
+[v i2___flmul@b b `d  1 p 4 0 ]
+[v i2___flmul@a a `d  1 p 4 4 ]
+"205
 } 0
 "137 C:\Users\tyler\MPLABXProjects\AutoHood_Final.X\mcc_generated_files/eusart1.c
-[v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+[v i2_EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
 {
 "140
 } 0
