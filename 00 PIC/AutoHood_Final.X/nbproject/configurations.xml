@@ -22,6 +22,8 @@
       <itemPath>anemometer.h</itemPath>
       <itemPath>temphumidity.h</itemPath>
       <itemPath>esp32.h</itemPath>
+      <itemPath>BTN_E.h</itemPath>
+      <itemPath>systemInit.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

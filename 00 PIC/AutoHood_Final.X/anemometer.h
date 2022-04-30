@@ -1,3 +1,9 @@
+/*
+ * Created by: Michael Reynolds
+ * Integrated by: Tyler Hulson
+ * Date Updated: 4/21/2022
+ * Date Created: 4/14/2022
+ */
 
 #include <xc.h> 
 #include "mcc_generated_files/mcc.h"
@@ -6,8 +12,10 @@
 float voltage;
 float ADCOut;
 float RESOLUTION = 0.34; // Anemometer math
-float RESOLUTION_ADJUSTED = 0.5;
-
+/*
+ * \Brief: This function takes and converts the ADCC Value
+ * \This function runs once every time ADCC needs to be updated
+ */
 void ADCGetVal() {
     LED_P_Toggle(); // toggle P led
     __delay_ms(200);
@@ -18,5 +26,7 @@ void ADCGetVal() {
     voltage = (float) convertedValue; // convert to float
    
     ADCOut = (RESOLUTION * voltage); // apply maths
-    ADCOut = ADCOut - (float) 60; // correction is 125 ish
+    ADCOut = ADCOut - (float) 64; // correction is 64 ish
+    LED_P_Toggle(); // toggle P led
+    __delay_ms(200);
 }

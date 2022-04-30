@@ -7,8 +7,10 @@ mcc_generated_files/interrupt_manager.h  \
 mcc_generated_files/i2c1_master.h  \
 mcc_generated_files/adcc.h  \
 mcc_generated_files/eusart1.h  \
+BTN_E.h  \
 stepper.h  \
 anemometer.h  \
 temphumidity.h  \
 mcc_generated_files/examples/i2c1_master_example.h  \
-esp32.h 
+esp32.h  \
+systemInit.h 

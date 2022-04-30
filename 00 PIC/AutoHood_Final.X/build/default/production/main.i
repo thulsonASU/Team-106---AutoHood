@@ -7,6 +7,14 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
+
+
+
+
+
+
+
+
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
@@ -16375,13 +16383,46 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 99 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 1 "main.c" 2
+# 9 "main.c" 2
+
+# 1 "./BTN_E.h" 1
+# 13 "./BTN_E.h"
+int BTN_Val;
+int gotBTNVal = 0;
+unsigned char count = 0;
+# 32 "./BTN_E.h"
+void getBTNPress() {
+    BTN_Val = PORTCbits.RC4;
+
+
+
+
+    while (BTN_Val == 0) {
+
+        _delay((unsigned long)((1)*(32000000/4000.0)));
+        count = count + 1;
+        if (count > 250) {
+            break;
+        }
+        BTN_Val = PORTCbits.RC4;
+        if(BTN_Val == 1) {
+            break;
+        }
+    }
+
+    if(count != 0) {
+        if (count >= 250) {
+            gotBTNVal = 2;
+        }
+        if (count < 250) {
+            gotBTNVal = 1;
+        }
+    }
+}
+# 10 "main.c" 2
 
 # 1 "./stepper.h" 1
-
-
-
-
+# 17 "./stepper.h"
 void delay_ms(int milliseconds)
 {
    while(milliseconds > 0)
@@ -16390,6 +16431,7 @@ void delay_ms(int milliseconds)
        _delay((unsigned long)((990)*(32000000/4000000.0)));
    }
 }
+# 33 "./stepper.h"
 void motorCW(int delay, int step)
 {
 
@@ -16468,7 +16510,7 @@ void motorCW(int delay, int step)
     do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
     delay_ms(delay);
     do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
-
+    }
 
     do { LATBbits.LATB3 = 0; } while(0);
     _delay((unsigned long)((1)*(32000000/4000.0)));
@@ -16479,8 +16521,8 @@ void motorCW(int delay, int step)
     _delay((unsigned long)((1)*(32000000/4000.0)));
     do { LATBbits.LATB1 = 0; } while(0);
     _delay((unsigned long)((1)*(32000000/4000.0)));
-    }
 }
+# 131 "./stepper.h"
 void motorCCW(int delay, int step)
 {
 
@@ -16530,14 +16572,10 @@ void motorCCW(int delay, int step)
 
 
     do { LATBbits.LATB3 = 0; } while(0);
-    _delay((unsigned long)((1)*(32000000/4000.0)));
     do { LATBbits.LATB4 = 1; } while(0);
-    _delay((unsigned long)((1)*(32000000/4000.0)));
 
     do { LATBbits.LATB0 = 0; } while(0);
-    _delay((unsigned long)((1)*(32000000/4000.0)));
     do { LATBbits.LATB1 = 1; } while(0);
-    _delay((unsigned long)((1)*(32000000/4000.0)));
 
     do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
     delay_ms(delay);
@@ -16560,6 +16598,8 @@ void motorCCW(int delay, int step)
     delay_ms(delay);
     do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
 
+    }
+
 
     do { LATBbits.LATB3 = 0; } while(0);
     _delay((unsigned long)((1)*(32000000/4000.0)));
@@ -16571,37 +16611,17 @@ void motorCCW(int delay, int step)
     do { LATBbits.LATB1 = 0; } while(0);
     _delay((unsigned long)((1)*(32000000/4000.0)));
 
-    }
 }
-void hoodStepperDemo() {
+# 11 "main.c" 2
 
-        motorCW(50,8);
-
-        do { LATAbits.LATA4 = 1; } while(0);
-        _delay((unsigned long)((200)*(32000000/4000.0)));
-        do { LATAbits.LATA4 = 0; } while(0);
-
-        motorCCW(50,8);
-
-}
-void hood_ESTOP() {
-    do { LATBbits.LATB5 = 0; } while(0);
-    _delay((unsigned long)((1)*(32000000/4000.0)));
-    do { LATBbits.LATB2 = 0; } while(0);
-    _delay((unsigned long)((1)*(32000000/4000.0)));
-}
-# 2 "main.c" 2
-# 13 "main.c"
 # 1 "./anemometer.h" 1
-
-
-
-
-
+# 12 "./anemometer.h"
 float voltage;
 float ADCOut;
 float RESOLUTION = 0.34;
-float RESOLUTION_ADJUSTED = 0.5;
+
+
+
 
 void ADCGetVal() {
     do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
@@ -16613,15 +16633,14 @@ void ADCGetVal() {
     voltage = (float) convertedValue;
 
     ADCOut = (RESOLUTION * voltage);
-    ADCOut = ADCOut - (float) 100;
+    ADCOut = ADCOut - (float) 64;
+    do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0);
+    _delay((unsigned long)((200)*(32000000/4000.0)));
 }
-# 13 "main.c" 2
-
-
+# 12 "main.c" 2
 
 # 1 "./temphumidity.h" 1
-
-
+# 10 "./temphumidity.h"
 # 1 "./mcc_generated_files/examples/i2c1_master_example.h" 1
 # 54 "./mcc_generated_files/examples/i2c1_master_example.h"
 uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg);
@@ -16631,8 +16650,10 @@ void I2C1_Write2ByteRegister(i2c1_address_t address, uint8_t reg, uint16_t data)
 void I2C1_WriteNBytes(i2c1_address_t address, uint8_t *data, size_t len);
 void I2C1_ReadNBytes(i2c1_address_t address, uint8_t *data, size_t len);
 void I2C1_ReadDataBlock(i2c1_address_t address, uint8_t reg, uint8_t *data, size_t len);
-# 3 "./temphumidity.h" 2
+# 10 "./temphumidity.h" 2
 
+float humidity, huData0, huData1;
+uint8_t HUdata[2];
 
 
 
@@ -16643,6 +16664,9 @@ static i2c1_operations_t wr1RegCompleteHandler(void *ptr)
     I2C1_SetDataCompleteCallback(((void*)0),((void*)0));
     return I2C1_CONTINUE;
 }
+
+
+
 static i2c1_operations_t rd1RegCompleteHandler(void *ptr)
 {
     I2C1_SetBuffer(ptr,1);
@@ -16677,16 +16701,15 @@ void I2C1_dataFetch(i2c1_address_t address, uint8_t *data, size_t len) {
     data[1] = I2C1_MasterRead();
 
     while(I2C1_BUSY == I2C1_Close());
+
+    huData0 = (float) HUdata[0];
+    huData1 = (float) HUdata[1];
+
 }
-# 16 "main.c" 2
-
-
-
+# 13 "main.c" 2
 
 # 1 "./esp32.h" 1
-
-
-
+# 11 "./esp32.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 1 3
 # 25 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -16742,7 +16765,7 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 4 "./esp32.h" 2
+# 11 "./esp32.h" 2
 
 
 uint8_t rxData;
@@ -16753,25 +16776,27 @@ float rxDatafUpper;
 
 int rx_f = 1;
 int tx_f = 0;
-
+# 29 "./esp32.h"
 void EUSART1ISR()
 {
-    if(rx_f == 1){
-    do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
+    do { LATAbits.LATA2 = 1; } while(0);
+    do { LATAbits.LATA4 = 1; } while(0);
+    _delay((unsigned long)((100)*(32000000/4000.0)));
+    do { LATAbits.LATA2 = 0; } while(0);
+    do { LATAbits.LATA4 = 0; } while(0);
 
     EUSART1_Receive_ISR();
 
-    while (EUSART1_Read() != 0x24);
+    if(rx_f == 1){
+
     while(!(EUSART1_is_rx_ready()));
 
     rxData = EUSART1_Read();
-# 36 "./esp32.h"
+
     rxDataf = (float) rxData;
     _delay((unsigned long)((1)*(32000000/4000.0)));
-    rxDataf = (rxDataf) * (float) 20;
+    rxDataf = (rxDataf) * (float) 3.25;
     _delay((unsigned long)((1)*(32000000/4000.0)));
-
-
 
     boundingCondition = rxDataf * (float) 0.7;
     _delay((unsigned long)((1)*(32000000/4000.0)));
@@ -16785,36 +16810,26 @@ void EUSART1ISR()
     }
 }
 
-void txWindSpeed(float speed) {
+
+
+
+
+void txWeather(float speed,float RH) {
     if(tx_f == 1) {
     while(!EUSART1_is_tx_ready());
 
-    printf("Wind Speed: %1.0f", speed);
+    printf("Wind Speed: %1.0f mV, Humidity: %1.0f PRH", speed, RH);
     _delay((unsigned long)((0.5)*(32000000/4000.0)));
     printf("\r\n");
 
     while(!EUSART1_is_tx_done());
-    rx_f = 0;
     }
 }
-# 20 "main.c" 2
+# 14 "main.c" 2
 
-
-
-
-
-
-
-float humidity;
-uint8_t HUdata[2];
-
-uint8_t address = 0x27;
-
-int hoodDeploy_f = 1;
-int hoodDeployed_f = 0;
-
-
-void main(void) {
+# 1 "./systemInit.h" 1
+# 15 "./systemInit.h"
+void systemInit() {
 
     SYSTEM_Initialize();
     I2C1_Initialize();
@@ -16824,7 +16839,6 @@ void main(void) {
 
     (INTCONbits.GIE = 1);
     (INTCONbits.PEIE = 1);
-
 
 
     do { LATAbits.LATA1 = 1; } while(0);
@@ -16855,9 +16869,28 @@ void main(void) {
 
     do { LATAbits.LATA5 = 0; } while(0);
     _delay((unsigned long)((200)*(32000000/4000.0)));
+}
+# 15 "main.c" 2
+# 30 "main.c"
+uint8_t address = 0x27;
+
+int hoodDeploy_f = 1;
+int hoodDeployed_f = 0;
+float humidity;
+uint8_t HUdata[2];
+
+void main(void) {
+
+    systemInit();
 
 
-
+    do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
+    _delay((unsigned long)((20)*(32000000/4000.0)));
+    I2C1_measReq(address);
+    _delay((unsigned long)((20)*(32000000/4000.0)));
+    I2C1_dataFetch(address, HUdata, 2);
+    _delay((unsigned long)((20)*(32000000/4000.0)));
+    do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
 
     while (1) {
 
@@ -16870,44 +16903,118 @@ void main(void) {
 
             do { LATAbits.LATA1 = 1; } while(0);
 
-            if(hoodDeploy_f == 1) {
-                do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
-                _delay((unsigned long)((100)*(32000000/4000.0)));
 
-                hoodDeploy_f = 0;
-                hoodDeployed_f = 1;
+            do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
+            _delay((unsigned long)((20)*(32000000/4000.0)));
+            I2C1_measReq(address);
+            _delay((unsigned long)((20)*(32000000/4000.0)));
+            I2C1_dataFetch(address, HUdata, 2);
+            _delay((unsigned long)((20)*(32000000/4000.0)));
+            do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
+
+            if((huData0 < 90 && huData0 > 0)){
+                if(hoodDeploy_f == 1) {
+                    motorCCW(100,12);
+
+
+                    hoodDeploy_f = 0;
+                    hoodDeployed_f = 1;
+                }
             }
+
 
             ADCGetVal();
 
-            if(rxDataf != 0 && (EUSART1_is_rx_ready())) {
-                txWindSpeed(ADCOut);
+
+
+            if(rxDataf != 0) {
+                txWeather(ADCOut,huData0);
             }
 
         }
-
         else {
 
             do { LATAbits.LATA1 = 0; } while(0);
 
             if(hoodDeployed_f == 1) {
-                do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0);
-                _delay((unsigned long)((100)*(32000000/4000.0)));
+                motorCW(100,8);
+
 
                 hoodDeploy_f = 1;
                 hoodDeployed_f = 0;
             }
 
+
             ADCGetVal();
 
-            if(rxDataf != 0 && (EUSART1_is_rx_ready())) {
-                    txWindSpeed(ADCOut);
+
+
+            if(rxDataf != 0) {
+                txWeather(ADCOut,huData0);
+            }
+
+
+
+            getBTNPress();
+            if(gotBTNVal == 2) {
+                gotBTNVal = 0;
+                count = 0;
+
+                do { LATAbits.LATA1 = 0; } while(0);
+                do { LATAbits.LATA4 = 0; } while(0);
+                do { LATAbits.LATA2 = 0; } while(0);
+                do { LATAbits.LATA5 = 0; } while(0);
+
+                do { LATAbits.LATA5 = 1; } while(0);
+                do { LATAbits.LATA1 = 1; } while(0);
+                _delay((unsigned long)((500)*(32000000/4000.0)));
+
+                while(1) {
+
+                    if(gotBTNVal == 1) {
+                        gotBTNVal = 0;
+                        count = 0;
+                            while(1) {
+                                if(hoodDeploy_f == 1) {
+
+                                    do { LATAbits.LATA2 = 0; } while(0);
+                                    do { LATAbits.LATA4 = 1; } while(0);
+                                    motorCCW(100,10);
+
+                                    hoodDeploy_f = 0;
+                                    hoodDeployed_f = 1;
+                                }
+                            getBTNPress();
+                                if(gotBTNVal == 1) {
+                                    gotBTNVal = 0;
+                                    count = 0;
+                                    break;
+                                }
+                            }
+                        }
+                    if(hoodDeployed_f == 1) {
+
+                        do { LATAbits.LATA2 = 1; } while(0);
+                        do { LATAbits.LATA4 = 0; } while(0);
+                        motorCW(100,8);
+
+                        hoodDeploy_f = 1;
+                        hoodDeployed_f = 0;
+                    }
+                getBTNPress();
+                if(gotBTNVal == 2) {
+                    gotBTNVal = 0;
+                    count = 0;
+                    do { LATAbits.LATA1 = 0; } while(0);
+                    do { LATAbits.LATA4 = 0; } while(0);
+                    do { LATAbits.LATA2 = 0; } while(0);
+                    do { LATAbits.LATA5 = 0; } while(0);
+
+                    break;
+                }
             }
         }
-
-
-
-
-
     }
+
+}
 }
